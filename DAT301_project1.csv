@@ -1,0 +1,817 @@
+population_group_id,population_group_name,measure_id,measure_name,location_id,location_name,sex_id,sex_name,age_id,age_name,cause_id,cause_name,metric_id,metric_name,year,val,upper,lower
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,554,Motor neuron disease,1,Number,1990,84678.17471083651,98340.92163773577,71541.45427183113
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,554,Motor neuron disease,1,Number,1990,77522.7001826899,90474.0328976893,65427.02947157105
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,554,Motor neuron disease,3,Rate,1990,3.1515185094500002,3.66001317147,2.66260129131
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,554,Motor neuron disease,3,Rate,1990,2.92627253992,3.41515036783,2.4696936414799997
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,557,Other neurological disorders,1,Number,1990,10215.86905477826,14584.619341126572,6603.174458389127
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,557,Other neurological disorders,1,Number,1990,8252.083113308723,11893.411995556433,5335.239288152199
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,557,Other neurological disorders,3,Rate,1990,0.3802101371,0.54280454159,0.24575431152000002
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,557,Other neurological disorders,3,Rate,1990,0.31149384831,0.44894417824000005,0.20139087242999998
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,972,Headache disorders,1,Number,1990,815829580.5107895,899906066.1193237,741389436.5436342
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,972,Headache disorders,1,Number,1990,973711070.2800896,1052233419.2544066,890158978.5546551
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,972,Headache disorders,3,Rate,1990,30363.219711798167,33492.3447963893,27592.73614433855
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,972,Headache disorders,3,Rate,1990,36754.962869746385,39718.96945145868,33601.09708471981
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,554,Motor neuron disease,1,Number,1991,84654.88001377901,98315.07142052209,71538.34238302961
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,554,Motor neuron disease,1,Number,1991,77490.31923114654,90414.17678116506,65350.25042910843
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,554,Motor neuron disease,3,Rate,1991,3.1010760455299997,3.60147593201,2.6205912744199997
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,554,Motor neuron disease,3,Rate,1991,2.88145536244,3.36202530989,2.43003037546
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,557,Other neurological disorders,1,Number,1991,10347.662797153132,14768.032939289613,6695.676945160867
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,557,Other neurological disorders,1,Number,1991,8344.828824598504,12027.64701823517,5396.840390720932
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,557,Other neurological disorders,3,Rate,1991,0.37905539790000004,0.54098231762,0.2452759177
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,557,Other neurological disorders,3,Rate,1991,0.31030007366,0.4472446151,0.20067996672
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,543,Alzheimer's disease and other dementias,1,Number,1990,7366401.083726314,8402490.874480125,6280404.78063932
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,543,Alzheimer's disease and other dementias,1,Number,1990,13736580.516959812,15659817.39835062,11808235.406428168
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,543,Alzheimer's disease and other dementias,3,Rate,1990,274.15977544032,312.72055174621,233.7415984772
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,543,Alzheimer's disease and other dementias,3,Rate,1990,518.51881145082,591.11580898204,445.72899206706
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,544,Parkinson's disease,1,Number,1990,1754881.5677424332,2080565.8913859008,1490648.3839254633
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,544,Parkinson's disease,1,Number,1990,1638067.5308232051,1918340.399609805,1384939.521262645
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,544,Parkinson's disease,3,Rate,1990,65.31248177614,77.43367094567,55.478356602149994
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,544,Parkinson's disease,3,Rate,1990,61.832624801339996,72.41216856958,52.277726149509995
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,545,Idiopathic epilepsy,1,Number,1990,8076299.770296757,10612481.019413184,6158251.748276459
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,545,Idiopathic epilepsy,1,Number,1990,7208277.671175751,9505184.75115609,5465948.8583268775
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,545,Idiopathic epilepsy,3,Rate,1990,300.58050142081,394.97108290432,229.19535567269998
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,545,Idiopathic epilepsy,3,Rate,1990,272.0930122348,358.79505046433,206.32480565096
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,554,Motor neuron disease,1,Number,1992,84888.32426254082,98596.89988939044,71783.94425033253
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,554,Motor neuron disease,1,Number,1992,77663.77352438265,90583.9787270527,65462.01069786184
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,554,Motor neuron disease,3,Rate,1992,3.0627836407999998,3.55739113286,2.58997561834
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,554,Motor neuron disease,3,Rate,1992,2.8464471603,3.31998430305,2.3992415769
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,557,Other neurological disorders,1,Number,1992,10483.691155729424,14949.806188529392,6791.055410654728
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,557,Other neurological disorders,1,Number,1992,8442.068296221534,12173.247835078417,5462.286200848093
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,557,Other neurological disorders,3,Rate,1992,0.37825317022,0.53939127937,0.24502231133000002
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,557,Other neurological disorders,3,Rate,1992,0.30940939691999997,0.44616048332,0.20019770272999998
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,972,Headache disorders,1,Number,1992,844621473.8749666,931188070.360435,767171856.9991432
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,972,Headache disorders,1,Number,1992,1006706135.5182036,1087931405.2017283,919866261.6013578
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,972,Headache disorders,3,Rate,1992,30474.07114375152,33597.40710141756,27679.677196008313
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,972,Headache disorders,3,Rate,1992,36896.68542576531,39873.664623963276,33713.925931929836
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,543,Alzheimer's disease and other dementias,1,Number,1992,7816489.75836421,8918293.759520842,6662279.639751034
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,543,Alzheimer's disease and other dementias,1,Number,1992,14560275.949141167,16596239.768565957,12523986.908704288
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,543,Alzheimer's disease and other dementias,3,Rate,1992,282.02013843903,321.77339425393,240.37606194154998
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,543,Alzheimer's disease and other dementias,3,Rate,1992,533.64721089264,608.2671162783199,459.01538586430996
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,544,Parkinson's disease,1,Number,1992,1902791.976261105,2251809.5167696616,1622417.419639777
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,544,Parkinson's disease,1,Number,1992,1780767.112439396,2076463.441050009,1511272.9073914145
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,544,Parkinson's disease,3,Rate,1992,68.65302369156,81.24562959711,58.53706707708
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,544,Parkinson's disease,3,Rate,1992,65.26671651842,76.10425294873001,55.38951148618
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,545,Idiopathic epilepsy,1,Number,1992,8348770.649656527,10719563.054570897,6384280.553970071
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,545,Idiopathic epilepsy,1,Number,1992,7415718.237789197,9569360.288515097,5644876.866913259
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,545,Idiopathic epilepsy,3,Rate,1992,301.22491389338995,386.76346417789,230.34581267602
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,545,Idiopathic epilepsy,3,Rate,1992,271.79274405134,350.72566246892,206.88981488969
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,543,Alzheimer's disease and other dementias,1,Number,1991,7588903.436578219,8655631.677171038,6468841.368762159
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,543,Alzheimer's disease and other dementias,1,Number,1991,14150338.477516131,16128706.415644694,12171049.586857509
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,543,Alzheimer's disease and other dementias,3,Rate,1991,277.99657450541,317.0729442723,236.96648093675
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,543,Alzheimer's disease and other dementias,3,Rate,1991,526.17629003049,599.74133610015,452.57699860434
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,544,Parkinson's disease,1,Number,1991,1829220.6135773049,2166660.4580825428,1555330.767884256
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,544,Parkinson's disease,1,Number,1991,1710762.170589783,1997932.1702051084,1450329.5883761442
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,544,Parkinson's disease,3,Rate,1991,67.00797669109,79.36906701961999,56.97484877863
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,544,Parkinson's disease,3,Rate,1991,63.614202124959995,74.29253644508,53.93009102543
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,545,Idiopathic epilepsy,1,Number,1991,8211473.052899864,10656505.59350354,6356198.8686660025
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,545,Idiopathic epilepsy,1,Number,1991,7309960.356084004,9538573.96981375,5631076.501933331
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,545,Idiopathic epilepsy,3,Rate,1991,300.80253351845,390.36892166959,232.84016289459998
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,545,Idiopathic epilepsy,3,Rate,1991,271.81878557504,354.68914553477,209.38996953133002
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,554,Motor neuron disease,1,Number,1993,85423.1345587318,99217.51755520693,72295.49127525919
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,554,Motor neuron disease,1,Number,1993,78112.55860941714,91068.04166546016,65824.45982214074
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,554,Motor neuron disease,3,Rate,1993,3.03717959995,3.52763243626,2.57043238233
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,554,Motor neuron disease,3,Rate,1993,2.82248100864,3.2906081003,2.37846885392
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,557,Other neurological disorders,1,Number,1993,10626.04023846306,15144.28957132024,6889.540329058106
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,557,Other neurological disorders,1,Number,1993,8547.324043111621,12330.361918800783,5532.53985439614
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,557,Other neurological disorders,3,Rate,1993,0.37780389127,0.53844813328,0.24495438441
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,557,Other neurological disorders,3,Rate,1993,0.30884482874,0.44553927006,0.1999100906
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,972,Headache disorders,1,Number,1991,830258116.264065,915637327.0876766,754209243.3659277
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,972,Headache disorders,1,Number,1991,990211460.917295,1070174897.7277552,905082057.2015898
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,972,Headache disorders,3,Rate,1991,30414.00041595423,33541.610134709736,27628.17946865115
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,972,Headache disorders,3,Rate,1991,36820.73002557583,39794.14755801646,33655.21749095971
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,554,Motor neuron disease,1,Number,1994,86241.86272062169,100225.37154051728,73017.77567280766
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,554,Motor neuron disease,1,Number,1994,78802.28574217734,91869.88794757336,66409.40639387518
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,554,Motor neuron disease,3,Rate,1994,3.0241005862700003,3.5144371338199996,2.56039342443
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,554,Motor neuron disease,3,Rate,1994,2.80878605408,3.27456059969,2.3670609650700003
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,557,Other neurological disorders,1,Number,1994,10773.610066926649,15349.149134492456,6990.190589936536
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,557,Other neurological disorders,1,Number,1994,8659.351976825921,12497.647251563543,5606.343481333423
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,557,Other neurological disorders,3,Rate,1994,0.37778034346,0.538223195,0.24511343789
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,557,Other neurological disorders,3,Rate,1994,0.30864925859000003,0.44545937949000003,0.19982947495
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,543,Alzheimer's disease and other dementias,1,Number,1993,8052603.954482492,9192854.858170372,6864526.325745426
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,543,Alzheimer's disease and other dementias,1,Number,1993,15022999.87494192,17121081.44957779,12915351.46638566
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,543,Alzheimer's disease and other dementias,3,Rate,1993,286.30656769247,326.84765531934,244.06502322330002
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,543,Alzheimer's disease and other dementias,3,Rate,1993,542.83373371345,618.6447877157,466.67699641093
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,544,Parkinson's disease,1,Number,1993,1975479.8556541903,2335785.237815021,1695035.9007546569
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,544,Parkinson's disease,1,Number,1993,1850819.4607955213,2156462.2645536643,1571853.737612225
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,544,Parkinson's disease,3,Rate,1993,70.23726240791,83.04775176895001,60.26620874486
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,544,Parkinson's disease,3,Rate,1993,66.8766056511,77.92055331321001,56.7965945778
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,545,Idiopathic epilepsy,1,Number,1993,8488831.64894201,10823973.773564449,6391391.73307372
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,545,Idiopathic epilepsy,1,Number,1993,7528799.065086151,9625468.830340443,5675531.945588733
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,545,Idiopathic epilepsy,3,Rate,1993,301.8164393612,384.84132554135,227.24294404865
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,545,Idiopathic epilepsy,3,Rate,1993,272.04194507755,347.80198544974996,205.07689692340998
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,543,Alzheimer's disease and other dementias,1,Number,1994,8274946.414551838,9444341.667905536,7052184.949244522
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,543,Alzheimer's disease and other dementias,1,Number,1994,15426327.171075298,17579137.099468913,13257218.53277069
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,543,Alzheimer's disease and other dementias,3,Rate,1994,290.16384287365,331.16908974203,247.28729142343
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,543,Alzheimer's disease and other dementias,3,Rate,1994,549.84766261178,626.5812553877801,472.53312743459
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,544,Parkinson's disease,1,Number,1994,2044859.585585096,2417230.7785364096,1763728.9344235752
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,544,Parkinson's disease,1,Number,1994,1915064.6427203452,2230678.7707099267,1626852.4218469404
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,544,Parkinson's disease,3,Rate,1994,71.70370486591999,84.76102885442,61.84576186497
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,544,Parkinson's disease,3,Rate,1994,68.25952839407,79.50910767744,57.986647868069994
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,545,Idiopathic epilepsy,1,Number,1994,8627206.642427513,11000402.83428742,6447988.181297881
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,545,Idiopathic epilepsy,1,Number,1994,7645100.765144034,9747399.5426129,5738846.461025268
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,545,Idiopathic epilepsy,3,Rate,1994,302.51596895295,385.73290987624,226.10092389228
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,545,Idiopathic epilepsy,3,Rate,1994,272.49783694643,347.43103757699,204.55233949654
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,554,Motor neuron disease,1,Number,1996,89189.87336399904,103499.55785386056,75706.24302675229
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,554,Motor neuron disease,1,Number,1996,81291.54467703396,94796.73888497287,68734.4203610431
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,554,Motor neuron disease,3,Rate,1996,3.04703400371,3.53590223032,2.58638663892
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,554,Motor neuron disease,3,Rate,1996,2.82271097591,3.29165593291,2.38668613749
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,557,Other neurological disorders,1,Number,1996,11082.864381496642,15786.928365025258,7198.806096322485
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,557,Other neurological disorders,1,Number,1996,8902.379918353075,12854.47621368637,5766.305223569361
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,557,Other neurological disorders,3,Rate,1996,0.37862891105,0.5393359776,0.24593607024999997
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,557,Other neurological disorders,3,Rate,1996,0.30912003957,0.4463498786,0.20022516621999997
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,543,Alzheimer's disease and other dementias,1,Number,1996,8764527.932626339,10011877.182092007,7468815.411194148
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,543,Alzheimer's disease and other dementias,1,Number,1996,16310172.711030226,18590422.835396636,14011448.127664948
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,543,Alzheimer's disease and other dementias,3,Rate,1996,299.42653386423,342.04029072104,255.16052066199998
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,543,Alzheimer's disease and other dementias,3,Rate,1996,566.34307680288,645.52089387409,486.52376548528
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,544,Parkinson's disease,1,Number,1996,2184687.830036788,2570938.1302479524,1893755.354536458
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,544,Parkinson's disease,1,Number,1996,2034692.3507302452,2365218.157556851,1736113.1724531977
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,544,Parkinson's disease,3,Rate,1996,74.63647894693,87.83212273805,64.69722113438999
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,544,Parkinson's disease,3,Rate,1996,70.65123997617,82.1281878735,60.28358455703
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,545,Idiopathic epilepsy,1,Number,1996,8916189.645114794,11370950.93918595,6737970.147668845
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,545,Idiopathic epilepsy,1,Number,1996,7899713.858307055,10082395.904799985,5897234.631772125
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,545,Idiopathic epilepsy,3,Rate,1996,304.60782157754,388.47094248924,230.19232320394
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,545,Idiopathic epilepsy,3,Rate,1996,274.30416168127005,350.09409277484,204.77146779246002
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,554,Motor neuron disease,1,Number,1995,87435.62277014939,101639.6493525945,74100.94988820488
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,554,Motor neuron disease,1,Number,1995,79828.53011566887,93092.24796748583,67312.3781384695
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,554,Motor neuron disease,3,Rate,1995,3.02592921488,3.51749521102,2.5644493858799997
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,554,Motor neuron disease,3,Rate,1995,2.80817944458,3.27476576123,2.3678907325600003
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,557,Other neurological disorders,1,Number,1995,10930.972854244344,15575.9932924178,7094.975809700401
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,557,Other neurological disorders,1,Number,1995,8782.032941443877,12684.272102440931,5685.123150289743
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,557,Other neurological disorders,3,Rate,1995,0.37829375555,0.53904634817,0.24553944835
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,557,Other neurological disorders,3,Rate,1995,0.30893120983,0.44620278159,0.19998922624999999
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,972,Headache disorders,1,Number,1993,859074459.029853,946853902.150398,780376773.4674196
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,972,Headache disorders,1,Number,1993,1023516754.0711832,1106031776.8257818,934862540.9926376
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,972,Headache disorders,3,Rate,1993,30543.99063301689,33664.94768192409,27745.93122688158
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,972,Headache disorders,3,Rate,1993,36983.25406082652,39964.81155681247,33779.86606272588
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,543,Alzheimer's disease and other dementias,1,Number,1995,8518652.88090054,9718797.63015129,7258098.463416801
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,543,Alzheimer's disease and other dementias,1,Number,1995,15875989.454138732,18077696.548081458,13638020.519640457
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,543,Alzheimer's disease and other dementias,3,Rate,1995,294.80936724758,336.34338900886,251.1847172712
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,543,Alzheimer's disease and other dementias,3,Rate,1995,558.47987158173,635.9307352672799,479.75340185504
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,544,Parkinson's disease,1,Number,1995,2116243.887589812,2499501.829669255,1830181.4280017377
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,544,Parkinson's disease,1,Number,1995,1979741.612938792,2305085.426983893,1687303.6761792083
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,544,Parkinson's disease,3,Rate,1995,73.2379321196,86.50153529451,63.33802260533
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,544,Parkinson's disease,3,Rate,1995,69.64264148404,81.0874696639,59.35536447123
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,545,Idiopathic epilepsy,1,Number,1995,8767478.898273792,11209526.006409628,6580848.970016178
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,545,Idiopathic epilepsy,1,Number,1995,7766951.808924768,9917426.79444303,5799491.45597888
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,545,Idiopathic epilepsy,3,Rate,1995,303.42061620467,387.93378663241003,227.74679845826
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,545,Idiopathic epilepsy,3,Rate,1995,273.22304926947004,348.87168819187,204.01243355135003
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,972,Headache disorders,1,Number,1994,873325453.5872524,962309854.2637165,793663943.6946757
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,972,Headache disorders,1,Number,1994,1040305172.7021596,1124116526.9963207,949752008.2499295
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,972,Headache disorders,3,Rate,1994,30623.45748204847,33743.7261052611,27830.09923154674
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,972,Headache disorders,3,Rate,1994,37080.074943941174,40067.40152841683,33852.44692438788
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,554,Motor neuron disease,1,Number,1998,94193.59068544253,108702.98087331894,80259.40877309226
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,554,Motor neuron disease,1,Number,1998,85313.38237196856,99292.38960158487,72276.18372651779
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,554,Motor neuron disease,3,Rate,1998,3.13788005244,3.62123274886,2.67368932405
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,554,Motor neuron disease,3,Rate,1998,2.88675480374,3.35976343556,2.44561421394
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,557,Other neurological disorders,1,Number,1998,11344.020993676617,16143.993994429122,7382.446804230524
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,557,Other neurological disorders,1,Number,1998,9115.60034449966,13123.862509968229,5916.528813055049
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,557,Other neurological disorders,3,Rate,1998,0.37790445116,0.5378064086200001,0.24593215310000002
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,557,Other neurological disorders,3,Rate,1998,0.3084451976,0.44407304096,0.20019799352999998
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,972,Headache disorders,1,Number,1996,901161705.574418,992923287.3918012,818388130.1917961
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,972,Headache disorders,1,Number,1996,1073548657.30004,1159520076.0783482,979996182.2647882
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,972,Headache disorders,3,Rate,1996,30786.79513894508,33921.68758229024,27958.96402666041
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,972,Headache disorders,3,Rate,1996,37277.15582445858,40262.36748902229,34028.70484281091
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,554,Motor neuron disease,1,Number,1997,91530.20195209108,105930.29240253272,77849.68506202394
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,554,Motor neuron disease,1,Number,1997,83176.57559445854,96909.05265309164,70498.29363692626
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,554,Motor neuron disease,3,Rate,1997,3.08748795624,3.57323042033,2.62601807819
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,554,Motor neuron disease,3,Rate,1997,2.85091924376,3.32160684818,2.4163647102000003
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,557,Other neurological disorders,1,Number,1997,11216.92536764004,15969.78456737714,7293.315954468546
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,557,Other neurological disorders,1,Number,1997,9011.015255138263,13001.216630677978,5842.868547703427
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,557,Other neurological disorders,3,Rate,1997,0.37836824611,0.5386912348499999,0.2460174313
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,557,Other neurological disorders,3,Rate,1997,0.30885711047000003,0.44562328299,0.20026727792000001
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,543,Alzheimer's disease and other dementias,1,Number,1997,9022208.28244266,10309557.61561266,7688747.160705439
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,543,Alzheimer's disease and other dementias,1,Number,1997,16753562.913649376,19092916.3830558,14393850.115656007
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,543,Alzheimer's disease and other dementias,3,Rate,1997,304.33626078245,347.76100449405,259.3560786603
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,543,Alzheimer's disease and other dementias,3,Rate,1997,574.2368517895101,654.4193764512,493.35650083186
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,544,Parkinson's disease,1,Number,1997,2250937.284176256,2638861.9340989813,1952279.7591350365
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,544,Parkinson's disease,1,Number,1997,2078884.9438655889,2413418.635257882,1776005.112114196
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,544,Parkinson's disease,3,Rate,1997,75.92839966409001,89.01383659116,65.85411279549001
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,544,Parkinson's disease,3,Rate,1997,71.2548340643,82.72114572307001,60.8734744722
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,545,Idiopathic epilepsy,1,Number,1997,9072089.620270206,11579746.703925788,6900171.86924422
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,545,Idiopathic epilepsy,1,Number,1997,8043434.574125027,10283669.694506235,6031680.239851802
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,545,Idiopathic epilepsy,3,Rate,1997,306.01885326558,390.60690047898,232.75593288271
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,545,Idiopathic epilepsy,3,Rate,1997,275.69279270485004,352.47798576656,206.73889427494
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,543,Alzheimer's disease and other dementias,1,Number,1998,9290655.054240782,10614792.929873638,7917730.82536838
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,543,Alzheimer's disease and other dementias,1,Number,1998,17224799.010265213,19626902.152345605,14800885.566410832
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,543,Alzheimer's disease and other dementias,3,Rate,1998,309.50047616423,353.61160725486,263.76412064434004
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,543,Alzheimer's disease and other dementias,3,Rate,1998,582.8367121761,664.11684187768,500.81858578904
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,544,Parkinson's disease,1,Number,1998,2317795.273962737,2707063.8810402686,2010304.8905479976
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,544,Parkinson's disease,1,Number,1998,2122422.436709972,2461828.540370038,1820456.6915360496
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,544,Parkinson's disease,3,Rate,1998,77.21293458368001,90.18067674426,66.96947817214
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,544,Parkinson's disease,3,Rate,1998,71.81655438322,83.30106212301,61.598918635939995
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,545,Idiopathic epilepsy,1,Number,1998,9231044.448737806,11771930.40011091,7052229.646823951
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,545,Idiopathic epilepsy,1,Number,1998,8192386.146281794,10458242.749991274,6162540.574126351
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,545,Idiopathic epilepsy,3,Rate,1998,307.514662389,392.15943794441995,234.93159749971
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,545,Idiopathic epilepsy,3,Rate,1998,277.20633509455,353.87628127979,208.52231046267
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,543,Alzheimer's disease and other dementias,1,Number,2000,9873294.0764496,11279563.093882456,8410118.061171228
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,543,Alzheimer's disease and other dementias,1,Number,2000,18211578.696335383,20730247.87365494,15647573.041095575
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,543,Alzheimer's disease and other dementias,3,Rate,2000,320.92177539992,366.63117555249,273.36266889404
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,543,Alzheimer's disease and other dementias,3,Rate,2000,600.68884648038,683.76437266166,516.11794655477
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,544,Parkinson's disease,1,Number,2000,2468166.1600779155,2865278.399732924,2145296.480678105
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,544,Parkinson's disease,1,Number,2000,2234237.43925076,2594871.1106040217,1934100.929336952
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,544,Parkinson's disease,3,Rate,2000,80.22532904834,93.13307432527999,69.73076563987
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,544,Parkinson's disease,3,Rate,2000,73.69385886446,85.58896294408001,63.794186961600005
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,545,Idiopathic epilepsy,1,Number,2000,9543917.995190645,12171532.943467768,7102603.057435683
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,545,Idiopathic epilepsy,1,Number,2000,8483654.170708692,10802121.885674983,6376522.523458804
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,545,Idiopathic epilepsy,3,Rate,2000,310.21572775732,395.62378384671,230.86317145055997
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,545,Idiopathic epilepsy,3,Rate,2000,279.8239802663,356.29608191805,210.32256582694998
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,554,Motor neuron disease,1,Number,1999,96883.29999853476,111513.35961053112,82707.56513782436
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,554,Motor neuron disease,1,Number,1999,87497.9938846432,101723.98191348424,74293.16395210441
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,554,Motor neuron disease,3,Rate,1999,3.18800183957,3.6694125363200003,2.72154096536
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,554,Motor neuron disease,3,Rate,1999,2.92310956556,3.3983675668099997,2.48196614074
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,557,Other neurological disorders,1,Number,1999,11476.207081542208,16326.99045678994,7473.497131794456
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,557,Other neurological disorders,1,Number,1999,9224.997589500606,13255.98341859248,5992.004909860704
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,557,Other neurological disorders,3,Rate,1999,0.37763132849000003,0.53724920199,0.24591980872000002
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,557,Other neurological disorders,3,Rate,1999,0.30818625089,0.4428523468,0.20017929659
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,972,Headache disorders,1,Number,1995,887516158.6625233,977758345.8619118,806435026.2285067
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,972,Headache disorders,1,Number,1995,1057176644.1964889,1142126888.0151205,964785238.2342894
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,972,Headache disorders,3,Rate,1995,30714.72459500445,33837.782017257014,27908.708469827798
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,972,Headache disorders,3,Rate,1995,37188.98139833109,40177.33065339426,33938.86960617605
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,554,Motor neuron disease,1,Number,2000,99317.09782064486,114101.80422501152,84916.08634745001
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,554,Motor neuron disease,1,Number,2000,89511.37713908455,103984.42208478386,76214.17231254553
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,554,Motor neuron disease,3,Rate,2000,3.2282052082500003,3.70876764175,2.76011440352
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,554,Motor neuron disease,3,Rate,2000,2.95243409575,3.4298115278999997,2.5138404536600003
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,557,Other neurological disorders,1,Number,2000,11629.206054663662,16549.913778686354,7575.953580110023
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,557,Other neurological disorders,1,Number,2000,9348.717457363931,13413.70694904809,6073.722090019684
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,557,Other neurological disorders,3,Rate,2000,0.37799597831,0.53793877418,0.24624896760999998
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,557,Other neurological disorders,3,Rate,2000,0.30835713911,0.44243633617,0.20033502734
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,543,Alzheimer's disease and other dementias,1,Number,2002,10532467.077202993,12031804.45766981,8964839.25243353
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,543,Alzheimer's disease and other dementias,1,Number,2002,19259381.224941965,21929074.989120346,16543166.955873877
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,543,Alzheimer's disease and other dementias,3,Rate,2002,333.96453784927,381.50568007904,284.25803526243
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,543,Alzheimer's disease and other dementias,3,Rate,2002,619.07164726775,704.8860198577601,531.76192416478
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,544,Parkinson's disease,1,Number,2002,2685232.4276487418,3103541.105208565,2336422.02109102
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,544,Parkinson's disease,1,Number,2002,2416388.4934407016,2797906.870001705,2095893.9019329348
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,544,Parkinson's disease,3,Rate,2002,85.14362306041,98.40739717483,74.08350719494
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,544,Parkinson's disease,3,Rate,2002,77.67215299398,89.93564199613999,67.37020650942
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,545,Idiopathic epilepsy,1,Number,2002,9852201.998778176,12404607.005492425,7371364.948625844
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,545,Idiopathic epilepsy,1,Number,2002,8771035.222167913,11018247.812098345,6611982.25799659
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,545,Idiopathic epilepsy,3,Rate,2002,312.39462351999003,393.32654120113,233.73198988815
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,545,Idiopathic epilepsy,3,Rate,2002,281.93528960312,354.16946906925,212.53490443721998
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,554,Motor neuron disease,1,Number,2001,101686.99176930451,116637.19768305134,87171.48880356419
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,554,Motor neuron disease,1,Number,2001,91500.66881400056,106160.02137263336,78005.25775535859
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,554,Motor neuron disease,3,Rate,2001,3.26458651491,3.74455194384,2.79857690626
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,554,Motor neuron disease,3,Rate,2001,2.97951001214,3.4568583013499996,2.54006281587
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,557,Other neurological disorders,1,Number,2001,11801.580967865051,16811.56407962211,7688.10242362127
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,557,Other neurological disorders,1,Number,2001,9493.696096715636,13613.381130004902,6172.845234745348
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,557,Other neurological disorders,3,Rate,2001,0.37888112739,0.53972297178,0.2468209066
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,557,Other neurological disorders,3,Rate,2001,0.30914050071,0.44328862183999995,0.20100458738
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,543,Alzheimer's disease and other dementias,1,Number,2001,10188571.122096935,11638969.394093946,8672399.394191306
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,543,Alzheimer's disease and other dementias,1,Number,2001,18713525.35115551,21311004.57187084,16076804.896369016
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,543,Alzheimer's disease and other dementias,3,Rate,2001,327.09662576003,373.66060171830003,278.42104109487
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,543,Alzheimer's disease and other dementias,3,Rate,2001,609.36315405075,693.9441242749799,523.50438278617
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,544,Parkinson's disease,1,Number,2001,2565953.159979708,2971557.576338905,2232024.242648136
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,544,Parkinson's disease,1,Number,2001,2316817.9815060515,2686574.5036635078,2007847.7007778008
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,544,Parkinson's disease,3,Rate,2001,82.37804991785,95.39968311789,71.65750620333
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,544,Parkinson's disease,3,Rate,2001,75.44187885928,87.48215434691001,65.38096830183
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,545,Idiopathic epilepsy,1,Number,2001,9697507.895190034,12234728.120175274,7290511.346366657
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,545,Idiopathic epilepsy,1,Number,2001,8625391.87013535,10890188.66990176,6440387.323113993
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,545,Idiopathic epilepsy,3,Rate,2001,311.33139993679,392.78699998681003,234.05653578742002
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,545,Idiopathic epilepsy,3,Rate,2001,280.86615943718,354.61408748883,209.71648360626997
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,972,Headache disorders,1,Number,1997,913874111.3354988,1007142132.5224104,829781757.9962033
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,972,Headache disorders,1,Number,1997,1089153041.2278786,1176346182.5930624,994506113.4477576
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,972,Headache disorders,3,Rate,1997,30826.71350105831,33972.82140834757,27990.118337823023
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,972,Headache disorders,3,Rate,1997,37331.27196496979,40319.86103424704,34087.20059220362
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,972,Headache disorders,1,Number,1998,926366957.8654032,1021115287.1219472,840796293.9694229
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,972,Headache disorders,1,Number,1998,1104659886.9557707,1193071564.7642894,1008835480.1244024
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,972,Headache disorders,3,Rate,1998,30860.15064473694,34016.510755995274,28009.52697322232
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,972,Headache disorders,3,Rate,1998,37378.45278789199,40370.04482801856,34136.03572453256
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,543,Alzheimer's disease and other dementias,1,Number,1999,9573345.626368895,10938587.322567042,8157654.252130365
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,543,Alzheimer's disease and other dementias,1,Number,1999,17730170.42748853,20197494.0893243,15236685.952290855
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,543,Alzheimer's disease and other dementias,3,Rate,1999,315.01655567181,359.94063483713,268.43240024567
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,543,Alzheimer's disease and other dementias,3,Rate,1999,592.3247891138,674.75247776177,509.02312701358
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,544,Parkinson's disease,1,Number,1999,2388426.1340886904,2780257.065267889,2070997.610399711
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,544,Parkinson's disease,1,Number,1999,2171199.557902089,2520238.877275512,1871414.520219791
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,544,Parkinson's disease,3,Rate,1999,78.59256351977,91.48599024467,68.1473916742
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,544,Parkinson's disease,3,Rate,1999,72.53485382545,84.19546600545999,62.519715507929995
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,545,Idiopathic epilepsy,1,Number,1999,9388900.8232718,11986400.16802658,7168149.988895211
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,545,Idiopathic epilepsy,1,Number,1999,8340452.567829345,10633706.146713492,6271411.214394529
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,545,Idiopathic epilepsy,3,Rate,1999,308.9472911899,394.41953139509997,235.87218180246
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,545,Idiopathic epilepsy,3,Rate,1999,278.63560751192,355.24800940915,209.51362764415
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,554,Motor neuron disease,1,Number,2003,106961.4053083406,122416.94921374226,92226.37254591938
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,554,Motor neuron disease,1,Number,2003,95887.9901206876,111031.80801083856,81929.61206924047
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,554,Motor neuron disease,3,Rate,2003,3.3493321879,3.8332988161799997,2.88792725984
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,554,Motor neuron disease,3,Rate,2003,3.04215529584,3.52261010291,2.59930991284
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,557,Other neurological disorders,1,Number,2003,12172.266627706593,17350.41682261536,7938.128770917296
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,557,Other neurological disorders,1,Number,2003,9828.083300520442,14062.652650138098,6406.61840556668
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,557,Other neurological disorders,3,Rate,2003,0.3811558412,0.5433016644600001,0.24857031493999998
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,557,Other neurological disorders,3,Rate,2003,0.31180709516,0.44615361297000006,0.20325723885000002
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,543,Alzheimer's disease and other dementias,1,Number,2005,11629438.66790294,13294775.82910372,9900294.300347846
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,543,Alzheimer's disease and other dementias,1,Number,2005,20954017.18551256,23873015.0513803,17987024.073645722
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,543,Alzheimer's disease and other dementias,3,Rate,2005,355.01880039906,405.85753974951,302.23218045837
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,543,Alzheimer's disease and other dementias,3,Rate,2005,647.39256198259,737.57753654262,555.72473260789
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,544,Parkinson's disease,1,Number,2005,3076910.196907176,3540673.762479575,2671447.0143747823
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,544,Parkinson's disease,1,Number,2005,2733267.941293306,3156964.702854968,2369834.6299960893
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,544,Parkinson's disease,3,Rate,2005,93.93067010676,108.08825667821999,81.55285405052
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,544,Parkinson's disease,3,Rate,2005,84.44668721194,97.53716669101999,73.21809937471001
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,545,Idiopathic epilepsy,1,Number,2005,10333455.235922834,12931234.795675142,7606900.430655231
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,545,Idiopathic epilepsy,1,Number,2005,9221528.26259467,11555769.502059974,6807611.305633416
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,545,Idiopathic epilepsy,3,Rate,2005,315.45554231779,394.75950610668,232.22037991394
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,545,Idiopathic epilepsy,3,Rate,2005,284.90712565816,357.02553631536,210.32706450116
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,554,Motor neuron disease,1,Number,2002,104300.43413613785,119501.72829271818,89672.5938298231
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,554,Motor neuron disease,1,Number,2002,93679.1157839601,108587.42539285212,79957.62073904296
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,554,Motor neuron disease,3,Rate,2002,3.30716877902,3.7891729609900002,2.84334773008
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,554,Motor neuron disease,3,Rate,2002,3.01121224226,3.49042347339,2.57014986122
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,557,Other neurological disorders,1,Number,2002,11982.892587040598,17077.19543870717,7809.635931525716
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,557,Other neurological disorders,1,Number,2002,9655.79128300346,13831.094924365836,6285.703559297988
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,557,Other neurological disorders,3,Rate,2002,0.37995477751,0.54148545072,0.24762873081
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,557,Other neurological disorders,3,Rate,2002,0.31037480101000003,0.44458534874,0.20204703418
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,972,Headache disorders,1,Number,2000,953469402.8289052,1052109041.2967732,864921926.5591772
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,972,Headache disorders,1,Number,2000,1138035094.7615478,1229076908.093259,1039526199.2610692
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,972,Headache disorders,3,Rate,2000,30991.591172719367,34197.77622674527,28113.441988502807
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,972,Headache disorders,3,Rate,2000,37536.83300745755,40539.74685383995,34287.62568760303
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,972,Headache disorders,1,Number,1999,939281157.3855366,1035970950.750237,852194738.3403469
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,972,Headache disorders,1,Number,1999,1120672238.733236,1210390033.6263907,1023600049.6658664
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,972,Headache disorders,3,Rate,1999,30907.597673276432,34089.2320635017,28041.96795049232
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,972,Headache disorders,3,Rate,1999,37439.11826387288,40436.38634751484,34196.15654766731
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,554,Motor neuron disease,1,Number,2004,109496.86239002824,125184.71021654792,94619.9583604055
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,554,Motor neuron disease,1,Number,2004,97941.5993203835,113314.73874951356,83749.22515023126
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,554,Motor neuron disease,3,Rate,2004,3.38564372147,3.8707120817700003,2.92564974883
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,554,Motor neuron disease,3,Rate,2004,3.06686786424,3.548250521,2.62245878208
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,557,Other neurological disorders,1,Number,2004,12372.116059244348,17639.289026183455,8073.826245824279
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,557,Other neurological disorders,1,Number,2004,10003.614944501696,14301.329542766667,6530.639241973728
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,557,Other neurological disorders,3,Rate,2004,0.38254591175,0.54540693531,0.24964276182
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,557,Other neurological disorders,3,Rate,2004,0.31324549949,0.44782082684999996,0.20449541118
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,972,Headache disorders,1,Number,2001,969511781.0559376,1069963791.6385704,880489081.9571546
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,972,Headache disorders,1,Number,2001,1157037622.939453,1249125971.315441,1057320036.7251184
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,972,Headache disorders,3,Rate,2001,31125.466801740797,34350.40514870189,28267.45814259622
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,972,Headache disorders,3,Rate,2001,37676.28397319785,40674.93042621646,34429.208838520295
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,554,Motor neuron disease,1,Number,2005,111774.08406071512,127657.9736324004,96732.08320510402
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,554,Motor neuron disease,1,Number,2005,99820.20383807064,115315.95557846186,85415.43039906697
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,554,Motor neuron disease,3,Rate,2005,3.41219403379,3.89709099077,2.95299791506
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,554,Motor neuron disease,3,Rate,2005,3.0840319032,3.5627866131099997,2.63898391556
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,557,Other neurological disorders,1,Number,2005,12585.190513997752,17954.46592811414,8215.565935245137
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,557,Other neurological disorders,1,Number,2005,10183.319828769232,14553.969039462543,6654.959804673761
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,557,Other neurological disorders,3,Rate,2005,0.38419560623000004,0.5481066745900001,0.25080147428
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,557,Other neurological disorders,3,Rate,2005,0.31462251152,0.44965751531000003,0.20561076377999998
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,972,Headache disorders,1,Number,2003,1004575109.3835472,1108742680.191116,911875435.5356008
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,972,Headache disorders,1,Number,2003,1197600065.8881285,1291956492.9051049,1095180781.0706797
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,972,Headache disorders,3,Rate,2003,31456.72721218529,34718.57476210165,28553.979248737538
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,972,Headache disorders,3,Rate,2003,37995.22107153079,40988.78578995876,34745.85304002417
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,554,Motor neuron disease,1,Number,2008,117739.17126522484,133958.51508063107,102724.80146330826
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,554,Motor neuron disease,1,Number,2008,104668.07905692804,120487.5054582779,89771.87893277954
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,554,Motor neuron disease,3,Rate,2008,3.4564788212799997,3.9326314711599997,3.01570069555
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,554,Motor neuron disease,3,Rate,2008,3.1047122253199997,3.5739552551699996,2.66285435372
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,557,Other neurological disorders,1,Number,2008,13361.739141618647,19043.974402972213,8736.633322318567
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,557,Other neurological disorders,1,Number,2008,10743.635141485463,15331.056502654645,7038.176863938022
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,557,Other neurological disorders,3,Rate,2008,0.39226170749,0.55907556924,0.25648208428
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,557,Other neurological disorders,3,Rate,2008,0.31868259806,0.45475677952000004,0.20876960722
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,972,Headache disorders,1,Number,2002,986831734.3309578,1089355043.8663645,896139491.6118815
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,972,Headache disorders,1,Number,2002,1177115313.7775033,1270484946.8064575,1076007913.9321406
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,972,Headache disorders,3,Rate,2002,31290.56105042699,34541.38058176726,28414.88218960747
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,972,Headache disorders,3,Rate,2002,37837.078347076116,40838.34260623947,34587.09207585744
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,543,Alzheimer's disease and other dementias,1,Number,2003,10882721.3822761,12432661.22637477,9266130.357259495
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,543,Alzheimer's disease and other dementias,1,Number,2003,19816392.2018917,22565744.70602949,17019121.877505105
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,543,Alzheimer's disease and other dementias,3,Rate,2003,340.77571169222,389.30969826594,290.15464571855
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,543,Alzheimer's disease and other dementias,3,Rate,2003,628.69752933143,715.92385736342,539.9509540771301
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,544,Parkinson's disease,1,Number,2003,2814933.266694672,3248053.95660752,2448884.877204866
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,544,Parkinson's disease,1,Number,2003,2523653.6354156747,2918625.304713692,2189553.851116008
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,544,Parkinson's disease,3,Rate,2003,88.14531344028,101.70782286867001,76.6830701226
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,544,Parkinson's disease,3,Rate,2003,80.06577530912,92.5966997132,69.46608053121001
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,545,Idiopathic epilepsy,1,Number,2003,10008116.810815684,12464988.815769318,7509340.212746342
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,545,Idiopathic epilepsy,1,Number,2003,8919475.714656524,11212642.39275057,6742271.513670916
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,545,Idiopathic epilepsy,3,Rate,2003,313.38881232952,390.32198709483,235.1434595675
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,545,Idiopathic epilepsy,3,Rate,2003,282.98048845647,355.73380349861003,213.90621458945003
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,543,Alzheimer's disease and other dementias,1,Number,2006,12024084.436120937,13752472.43372026,10219276.357648997
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,543,Alzheimer's disease and other dementias,1,Number,2006,21539528.583240893,24530039.493378613,18471078.134691816
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,543,Alzheimer's disease and other dementias,3,Rate,2006,362.38353645014996,414.47393537038005,307.98997845702
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,543,Alzheimer's disease and other dementias,3,Rate,2006,656.60187909349,747.76334882843,563.06453343449
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,544,Parkinson's disease,1,Number,2006,3206212.0461975974,3686871.8141543614,2786640.686231911
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,544,Parkinson's disease,1,Number,2006,2832891.2569306884,3273111.905391301,2460416.2258330155
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,544,Parkinson's disease,3,Rate,2006,96.62926654272,111.11545777555999,83.98416628371
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,544,Parkinson's disease,3,Rate,2006,86.3566588925,99.77615894692,75.00228758446
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,545,Idiopathic epilepsy,1,Number,2006,10509576.434925212,13185711.346147727,7841642.948929485
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,545,Idiopathic epilepsy,1,Number,2006,9381430.524253804,11795170.51178092,7006220.214988607
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,545,Idiopathic epilepsy,3,Rate,2006,316.73908273968,397.39281053895996,236.33253063958
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,545,Idiopathic epilepsy,3,Rate,2006,285.97956018419,359.55898906206,213.57465372216
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,554,Motor neuron disease,1,Number,2006,113764.30293935466,129824.55352522733,98737.02406398056
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,554,Motor neuron disease,1,Number,2006,101441.97459432777,117065.53337176562,86856.08728571431
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,554,Motor neuron disease,3,Rate,2006,3.42864445438,3.9126705300899998,2.97575022439
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,554,Motor neuron disease,3,Rate,2006,3.09231424821,3.56857620592,2.6476842286499997
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,557,Other neurological disorders,1,Number,2006,12819.458206181358,18301.3547291876,8372.607813715631
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,557,Other neurological disorders,1,Number,2006,10361.769882482356,14803.30598057085,6777.4357249575805
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,557,Other neurological disorders,3,Rate,2006,0.38635462224,0.55156878545,0.25233482391
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,557,Other neurological disorders,3,Rate,2006,0.31586381054,0.45125771839,0.20660048409
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,543,Alzheimer's disease and other dementias,1,Number,2004,11224304.113266204,12828067.502848106,9554078.436839502
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,543,Alzheimer's disease and other dementias,1,Number,2004,20281075.414979145,23106142.94983594,17415444.935493477
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,543,Alzheimer's disease and other dementias,3,Rate,2004,347.05555866591,396.64393345713995,295.41216951849003
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,543,Alzheimer's disease and other dementias,3,Rate,2004,635.06598701728,723.52797760232,545.3338396018
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,544,Parkinson's disease,1,Number,2004,2946048.5004844973,3393595.160635981,2560616.7687485507
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,544,Parkinson's disease,1,Number,2004,2624904.395821297,3033760.57163646,2275860.9147855304
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,544,Parkinson's disease,3,Rate,2004,91.09183944723,104.92998518887,79.17428770990999
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,544,Parkinson's disease,3,Rate,2004,82.19423609692001,94.99684372640999,71.26455715927
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,545,Idiopathic epilepsy,1,Number,2004,10167076.447665049,12766963.726820605,7560610.21065043
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,545,Idiopathic epilepsy,1,Number,2004,9067098.260150596,11410704.853598692,6756326.680592975
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,545,Idiopathic epilepsy,3,Rate,2004,314.36607213563997,394.75460429144,233.7741185586
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,545,Idiopathic epilepsy,3,Rate,2004,283.92013678486995,357.306029988,211.56241393654
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,543,Alzheimer's disease and other dementias,1,Number,2008,12885038.2950971,14748978.243482191,10910578.645340558
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,543,Alzheimer's disease and other dementias,1,Number,2008,22870874.92641561,26014141.26105839,19567280.68269548
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,543,Alzheimer's disease and other dementias,3,Rate,2008,378.26716036599,432.98700327376,320.30278122596997
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,543,Alzheimer's disease and other dementias,3,Rate,2008,678.40630713291,771.6433045491,580.41359026666
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,544,Parkinson's disease,1,Number,2008,3492824.3175479816,4014648.611605104,3041490.1235709363
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,544,Parkinson's disease,1,Number,2008,3051441.425732177,3529552.231156731,2649241.9612320047
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,544,Parkinson's disease,3,Rate,2008,102.53913927123,117.85837926123,89.28928311855
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,544,Parkinson's disease,3,Rate,2008,90.51324515233999,104.69518558759,78.58302148052
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,545,Idiopathic epilepsy,1,Number,2008,10892407.6622868,13544096.289605664,8343107.028517581
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,545,Idiopathic epilepsy,1,Number,2008,9730716.805708207,12212415.149753273,7513711.62807084
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,545,Idiopathic epilepsy,3,Rate,2008,319.7693341377,397.61518172143,244.92929955107
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,545,Idiopathic epilepsy,3,Rate,2008,288.63695311858,362.25021952916,222.87513594741
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,554,Motor neuron disease,1,Number,2007,115772.60899214678,131916.08539510952,100816.64384092622
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,554,Motor neuron disease,1,Number,2007,103071.26783902716,118806.9813611672,88322.0674413204
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,554,Motor neuron disease,3,Rate,2007,3.44372577593,3.92392317569,2.99885161145
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,554,Motor neuron disease,3,Rate,2007,3.0993595675099996,3.57253347212,2.65585017519
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,557,Other neurological disorders,1,Number,2007,13084.239366047628,18663.110113815044,8550.42712338964
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,557,Other neurological disorders,1,Number,2007,10550.23516957726,15063.062418606754,6906.068731914813
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,557,Other neurological disorders,3,Rate,2007,0.38919855702999995,0.55514541753,0.25433758932
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,557,Other neurological disorders,3,Rate,2007,0.31724624134,0.45294724322,0.20766592521
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,972,Headache disorders,1,Number,2004,1021934686.7372656,1126554116.9631636,928001428.8204646
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,972,Headache disorders,1,Number,2004,1217678456.4199188,1313914782.8281534,1114989188.5242317
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,972,Headache disorders,3,Rate,2004,31598.22738645276,34833.06087260585,28693.810419961752
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,972,Headache disorders,3,Rate,2004,38129.446046280966,41142.91630694688,34913.913342128
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,972,Headache disorders,1,Number,2008,1083589681.226832,1193034609.9248054,984418525.3923266
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,972,Headache disorders,1,Number,2008,1291553380.9364116,1393530768.7281137,1184796483.6460311
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,972,Headache disorders,3,Rate,2008,31811.034032823398,35024.01807267633,28899.65801293168
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,972,Headache disorders,3,Rate,2008,38310.64454006114,41335.54425576574,35143.97283708726
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,543,Alzheimer's disease and other dementias,1,Number,2007,12450057.057939537,14245388.985617869,10562297.705957394
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,543,Alzheimer's disease and other dementias,1,Number,2007,22189463.00077532,25259984.13618977,19007961.30302652
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,543,Alzheimer's disease and other dementias,3,Rate,2007,370.334423448,423.73764973366,314.18188792374997
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,543,Alzheimer's disease and other dementias,3,Rate,2007,667.2385611562,759.5693266335801,571.5706031237
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,544,Parkinson's disease,1,Number,2007,3347829.7391341333,3848188.063641599,2912575.342194195
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,544,Parkinson's disease,1,Number,2007,2939942.410550673,3398548.586498471,2553705.2142805173
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,544,Parkinson's disease,3,Rate,2007,99.58320596239001,114.46666479005,86.63630255513
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,544,Parkinson's disease,3,Rate,2007,88.40425493079,102.19457175666,76.79007791824
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,545,Idiopathic epilepsy,1,Number,2007,10699535.063355127,13384124.610107789,8091207.251235286
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,545,Idiopathic epilepsy,1,Number,2007,9554722.300293252,12067660.579504058,7254900.592939343
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,545,Idiopathic epilepsy,3,Rate,2007,318.26409553058,398.11882369483,240.67781845816
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,545,Idiopathic epilepsy,3,Rate,2007,287.31110616205,362.87531975462,218.15532141516
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,554,Motor neuron disease,1,Number,2009,119678.94298418892,136036.67491198782,104446.70976089516
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,554,Motor neuron disease,1,Number,2009,106204.31286542112,122086.1928173846,91169.681701026
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,554,Motor neuron disease,3,Rate,2009,3.46610372148,3.93985118362,3.02495259711
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,554,Motor neuron disease,3,Rate,2009,3.10714674343,3.5717920129200005,2.66728885065
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,557,Other neurological disorders,1,Number,2009,13639.288928474458,19424.85808269956,8920.685914410118
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,557,Other neurological disorders,1,Number,2009,10938.901064100348,15602.738726483558,7170.622122020559
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,557,Other neurological disorders,3,Rate,2009,0.39501677517,0.56257660045,0.25835808602
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,557,Other neurological disorders,3,Rate,2009,0.32003192621000004,0.4564786261,0.20978597359999998
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,554,Motor neuron disease,1,Number,2010,121537.03349095624,138120.6397545433,106058.3459674077
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,554,Motor neuron disease,1,Number,2010,107720.36395622864,123647.0443644264,92599.3727352686
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,554,Motor neuron disease,3,Rate,2010,3.4742861480899996,3.94834900673,3.03180875574
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,554,Motor neuron disease,3,Rate,2010,3.1087901603100003,3.56843126735,2.67240109704
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,557,Other neurological disorders,1,Number,2010,13892.533083215709,19769.59982689017,9086.67175274818
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,557,Other neurological disorders,1,Number,2010,11134.108426080558,15890.269063198204,7302.197087986697
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,557,Other neurological disorders,3,Rate,2010,0.39713520945999997,0.56513841797,0.25975373017000003
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,557,Other neurological disorders,3,Rate,2010,0.32132834914,0.45859028223000003,0.21074008314
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,972,Headache disorders,1,Number,2005,1038056274.4049436,1143154025.23799,943000965.1346204
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,972,Headache disorders,1,Number,2005,1236968651.1072648,1335095742.4752553,1134173636.6394038
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,972,Headache disorders,3,Rate,2005,31689.362127434862,34897.74376053708,28787.552088928693
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,972,Headache disorders,3,Rate,2005,38217.22092917631,41248.94265194678,35041.27966759341
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,972,Headache disorders,1,Number,2006,1053115783.1802884,1159650808.393509,956732307.4841796
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,972,Headache disorders,1,Number,2006,1255216929.6075912,1354582535.0921752,1151285693.8176987
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,972,Headache disorders,3,Rate,2006,31738.95058936109,34949.71806173487,28834.13193446302
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,972,Headache disorders,3,Rate,2006,38263.50198265595,41292.52107312967,35095.30614900856
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,543,Alzheimer's disease and other dementias,1,Number,2009,13328148.919649782,15259477.607539732,11260591.627363533
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,543,Alzheimer's disease and other dementias,1,Number,2009,23509832.29411993,26731170.716344472,20087192.440573767
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,543,Alzheimer's disease and other dementias,3,Rate,2009,386.00563657206,441.94016762308,326.12569573635
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,543,Alzheimer's disease and other dementias,3,Rate,2009,687.81103968797,782.05552861745,587.67721284081
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,544,Parkinson's disease,1,Number,2009,3641004.608701605,4184952.15386528,3172980.559602335
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,544,Parkinson's disease,1,Number,2009,3163664.570635286,3662469.6261802455,2748510.529879525
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,544,Parkinson's disease,3,Rate,2009,105.44962471657,121.20326160182,91.89486012827
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,544,Parkinson's disease,3,Rate,2009,92.55716460797,107.15036202273,80.41128756254001
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,545,Idiopathic epilepsy,1,Number,2009,11084867.064311177,13721839.78540432,8603808.825348813
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,545,Idiopathic epilepsy,1,Number,2009,9901552.7473811,12371299.367339669,7727753.679133058
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,545,Idiopathic epilepsy,3,Rate,2009,321.03641647999,397.40758699776,249.18079191602
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,545,Idiopathic epilepsy,3,Rate,2009,289.68293795123003,361.93862098579,226.08558946744998
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,972,Headache disorders,1,Number,2015,1189119282.5441031,1306003861.8242998,1082077755.0943224
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,972,Headache disorders,1,Number,2015,1413532276.8277974,1520512586.0809517,1294002901.6426373
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,972,Headache disorders,3,Rate,2015,31952.58601328632,35093.36812648765,29076.29457386484
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,972,Headache disorders,3,Rate,2015,38286.81550359961,41184.4750972564,35049.25297319534
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,972,Headache disorders,1,Number,2017,1224494317.761118,1343835080.3651676,1114733064.2676992
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,972,Headache disorders,1,Number,2017,1451716052.420583,1559853920.7747197,1328325723.1840386
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,972,Headache disorders,3,Rate,2017,32112.004035430204,35241.68050247949,29233.54738276146
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,972,Headache disorders,3,Rate,2017,38386.73423497867,41246.149894346716,35124.00818901945
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,554,Motor neuron disease,1,Number,2012,124986.07117458174,141642.64529392507,108892.88302129477
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,554,Motor neuron disease,1,Number,2012,110451.8762542859,126700.2784077518,95048.40794537553
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,554,Motor neuron disease,3,Rate,2012,3.48666329922,3.9513220018,3.0377210453
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,554,Motor neuron disease,3,Rate,2012,3.10695904974,3.5640189189399996,2.67366677003
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,557,Other neurological disorders,1,Number,2012,14380.518824112576,20451.775836122804,9418.018046694284
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,557,Other neurological disorders,1,Number,2012,11532.89545999941,16444.125205899316,7573.159448370663
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,557,Other neurological disorders,3,Rate,2012,0.40116491971,0.57053122433,0.26272893904
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,557,Other neurological disorders,3,Rate,2012,0.32441489574,0.46256546612,0.21302939417
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,554,Motor neuron disease,1,Number,2011,123256.1380779102,139899.83647701915,107505.20064596966
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,554,Motor neuron disease,1,Number,2011,109095.01025668278,125189.89746630171,93912.97408421904
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,554,Motor neuron disease,3,Rate,2011,3.4806265778800003,3.95062750364,3.03583630368
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,554,Motor neuron disease,3,Rate,2011,3.108186669,3.56674030721,2.67564074111
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,557,Other neurological disorders,1,Number,2011,14130.881192781246,20100.68772113785,9249.361808625932
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,557,Other neurological disorders,1,Number,2011,11329.342430264924,16161.992196912224,7435.568086784047
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,557,Other neurological disorders,3,Rate,2011,0.39904155213000003,0.56762274891,0.26119246507
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,557,Other neurological disorders,3,Rate,2011,0.32278021724,0.46046550225,0.21184409395999998
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,554,Motor neuron disease,1,Number,2014,128534.47979867988,145680.69683844567,111396.00385231836
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,554,Motor neuron disease,1,Number,2014,113171.85887406448,129707.47888000446,97509.1025951572
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,554,Motor neuron disease,3,Rate,2014,3.4972506226299998,3.9637761674700003,3.03093570256
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,554,Motor neuron disease,3,Rate,2014,3.1038770432200002,3.5573867040400002,2.67430674075
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,557,Other neurological disorders,1,Number,2014,14889.637144238608,21175.623117458243,9759.681252054306
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,557,Other neurological disorders,1,Number,2014,11941.417507487611,17016.092572929218,7847.437080030511
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,557,Other neurological disorders,3,Rate,2014,0.4051270356,0.57616027426,0.26554782335
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,557,Other neurological disorders,3,Rate,2014,0.32750802216999997,0.46668721030000004,0.21522558737999997
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,972,Headache disorders,1,Number,2007,1068351568.5608592,1176346825.995235,970596413.9030012
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,972,Headache disorders,1,Number,2007,1273453695.7993371,1374059640.597572,1168229577.255141
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,972,Headache disorders,3,Rate,2007,31778.7589519877,34991.142735528156,28870.97317471679
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,972,Headache disorders,3,Rate,2007,38292.833479318964,41318.06062648289,35128.737554424086
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,554,Motor neuron disease,1,Number,2020,144231.59667413926,163890.4656814021,125158.57709899546
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,554,Motor neuron disease,1,Number,2020,126065.7996505403,144610.1146101748,108921.5719060741
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,554,Motor neuron disease,3,Rate,2020,3.65921888273,4.15797301389,3.1753280086799998
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,554,Motor neuron disease,3,Rate,2020,3.22565610769,3.70015103794,2.78698532553
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,557,Other neurological disorders,1,Number,2020,10485.507013316656,14034.479163319467,8059.964146131572
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,557,Other neurological disorders,1,Number,2020,8389.631642098808,11175.19150345062,6457.453602453456
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,557,Other neurological disorders,3,Rate,2020,0.26602191297,0.35606089336999996,0.20448482633
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,557,Other neurological disorders,3,Rate,2020,0.21466620307,0.28594055507,0.16522740276
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,554,Motor neuron disease,1,Number,2013,126726.65796977388,143596.37930506916,110213.92228248436
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,554,Motor neuron disease,1,Number,2013,111789.69663746796,128177.29662010905,96227.07435360168
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,554,Motor neuron disease,3,Rate,2013,3.49133317518,3.95609582811,3.03640551559
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,554,Motor neuron disease,3,Rate,2013,3.10469274767,3.55981933221,2.67247795514
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,557,Other neurological disorders,1,Number,2013,14635.281496889826,20812.48155840169,9589.668961777455
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,557,Other neurological disorders,1,Number,2013,11738.472014150051,16730.63355945698,7711.892596567141
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,557,Other neurological disorders,3,Rate,2013,0.40320359296999997,0.5733861248000001,0.26419642025
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,557,Other neurological disorders,3,Rate,2013,0.32600812085,0.46465352567,0.21417946140000002
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,543,Alzheimer's disease and other dementias,1,Number,2011,14339066.205432288,16429635.62743197,12116171.332233077
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,543,Alzheimer's disease and other dementias,1,Number,2011,25126211.2823848,28559547.99197583,21473401.286362592
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,543,Alzheimer's disease and other dementias,3,Rate,2011,404.92048278366,463.95601323739,342.14821767673
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,543,Alzheimer's disease and other dementias,3,Rate,2011,715.86184158825,813.6798019682701,611.7909468028599
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,544,Parkinson's disease,1,Number,2011,3926759.307348544,4505931.733298634,3433559.010443744
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,544,Parkinson's disease,1,Number,2011,3411485.6155977133,3961251.089847536,2962829.289699363
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,544,Parkinson's disease,3,Rate,2011,110.88764440633,127.24287807153,96.96017524825
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,544,Parkinson's disease,3,Rate,2011,97.19540872625,112.85857896767999,84.41290283674999
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,545,Idiopathic epilepsy,1,Number,2011,11388815.595447278,14035625.25056626,8849585.980841102
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,545,Idiopathic epilepsy,1,Number,2011,10174474.117946817,12605373.111282298,7938587.043429889
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,545,Idiopathic epilepsy,3,Rate,2011,321.60843971105,396.35162228880995,249.90320683784
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,545,Idiopathic epilepsy,3,Rate,2011,289.87727984169,359.13514807048,226.17542599836
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,554,Motor neuron disease,1,Number,2015,130506.03242912667,147997.95944304852,113037.70074609094
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,554,Motor neuron disease,1,Number,2015,114734.03255116382,131455.27973005432,98930.59998585988
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,554,Motor neuron disease,3,Rate,2015,3.50680145185,3.9768235183100002,3.03741341079
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,554,Motor neuron disease,3,Rate,2015,3.1076762860500002,3.5605865706100004,2.67962585037
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,557,Other neurological disorders,1,Number,2015,15136.29596026966,21526.649760486423,9925.178131805742
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,557,Other neurological disorders,1,Number,2015,12138.20683072915,17300.707534159876,7979.284012938089
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,557,Other neurological disorders,3,Rate,2015,0.40672437635,0.5784382930699999,0.26669747317
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,557,Other neurological disorders,3,Rate,2015,0.32877444194,0.46860549865,0.21612621081
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,554,Motor neuron disease,1,Number,2019,141421.46236960305,160294.95552425188,122706.17362987935
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,554,Motor neuron disease,1,Number,2019,123630.9121008964,141740.32977970055,107062.82298940726
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,554,Motor neuron disease,3,Rate,2019,3.6251093778500003,4.10890070542,3.14537336337
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,554,Motor neuron disease,3,Rate,2019,3.19628923185,3.66448068768,2.7679464823
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,557,Other neurological disorders,1,Number,2019,10947.339039960483,14127.60419382595,8351.35133496014
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,557,Other neurological disorders,1,Number,2019,8758.546131638435,11264.827064825486,6683.5254299987855
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,557,Other neurological disorders,3,Rate,2019,0.28061724685,0.36213817614,0.21407332052
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,557,Other neurological disorders,3,Rate,2019,0.22643889147,0.29123497379999996,0.17279238663
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,554,Motor neuron disease,1,Number,2021,146994.91391583497,167554.68446613665,127336.51686889578
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,554,Motor neuron disease,1,Number,2021,128928.33153413494,148696.3551537674,111295.20038029613
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,554,Motor neuron disease,3,Rate,2021,3.69568136885,4.21258606266,3.2014386105600003
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,554,Motor neuron disease,3,Rate,2021,3.2679090495099996,3.76896341444,2.8209671851199998
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,557,Other neurological disorders,1,Number,2021,10655.469608357547,14249.410435152236,8187.5856187984755
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,557,Other neurological disorders,1,Number,2021,8534.14826655231,11363.3894419289,6552.743227599659
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,557,Other neurological disorders,3,Rate,2021,0.26789512276,0.35825239976,0.20584867069
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,557,Other neurological disorders,3,Rate,2021,0.21631258249000002,0.28802453851,0.16609048328
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,554,Motor neuron disease,1,Number,2022,149836.28333635136,170890.48919482122,129781.33534871336
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,554,Motor neuron disease,1,Number,2022,131811.84792411592,152172.98884483837,113824.27676038012
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,554,Motor neuron disease,3,Rate,2022,3.73388074116,4.25854600931,3.23411671613
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,554,Motor neuron disease,3,Rate,2022,3.3102436511499995,3.82158112593,2.8585145829200003
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,557,Other neurological disorders,1,Number,2022,10852.38524881136,14509.417245886598,8340.972305935346
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,557,Other neurological disorders,1,Number,2022,8700.529954607924,11583.666401421278,6664.826830029349
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,557,Other neurological disorders,3,Rate,2022,0.27043858386,0.36157085863,0.20785483437000002
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,557,Other neurological disorders,3,Rate,2022,0.21849988827,0.29090524687999997,0.16737646158
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,554,Motor neuron disease,1,Number,2023,152337.7069436895,173813.87413706968,132051.5614120102
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,554,Motor neuron disease,1,Number,2023,133812.69140260018,154469.17263586522,115661.16294395283
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,554,Motor neuron disease,3,Rate,2023,3.7629488144,4.29343939023,3.26185339417
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,554,Motor neuron disease,3,Rate,2023,3.33077225081,3.8449389847,2.87895705551
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,557,Other neurological disorders,1,Number,2023,11085.012642288551,14804.395912178456,8487.912702164815
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,557,Other neurological disorders,1,Number,2023,8895.727769065636,11838.35133198701,6802.497218260778
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,557,Other neurological disorders,3,Rate,2023,0.27381490779,0.36568873960000003,0.20966300255
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,557,Other neurological disorders,3,Rate,2023,0.22142625556,0.29467199036999997,0.16932301961000001
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,543,Alzheimer's disease and other dementias,1,Number,2019,19168725.269909497,21982548.464645494,16390144.280739527
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,543,Alzheimer's disease and other dementias,1,Number,2019,32843462.723099284,37478680.16119881,28292631.750838872
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,543,Alzheimer's disease and other dementias,3,Rate,2019,491.35912309920997,563.48690823118,420.13471463832
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,543,Alzheimer's disease and other dementias,3,Rate,2019,849.1177849834801,968.95428325831,731.46297045985
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,544,Parkinson's disease,1,Number,2019,5392363.0137307225,6198532.19280502,4703790.679477831
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,544,Parkinson's disease,1,Number,2019,4692401.703908176,5445327.493684626,4043734.7837398434
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,544,Parkinson's disease,3,Rate,2019,138.22446326249002,158.88930014245,120.57403040454
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,544,Parkinson's disease,3,Rate,2019,121.31491050950999,140.78066186045,104.54461369004001
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,545,Idiopathic epilepsy,1,Number,2019,12628380.414725743,15441489.401991664,9852491.526192889
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,545,Idiopathic epilepsy,1,Number,2019,11357931.995345412,14132481.219172517,8838944.66634775
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,545,Idiopathic epilepsy,3,Rate,2019,323.70801080254,395.8174883866,252.55260996682
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,545,Idiopathic epilepsy,3,Rate,2019,293.64206019293,365.37381123046003,228.51747332361
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,543,Alzheimer's disease and other dementias,1,Number,2012,14899535.01348948,17075255.43760606,12626178.44543027
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,543,Alzheimer's disease and other dementias,1,Number,2012,26069076.3476748,29643751.66596151,22335979.013152383
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,543,Alzheimer's disease and other dementias,3,Rate,2012,415.64361067393,476.33841034910006,352.22511261732
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,543,Alzheimer's disease and other dementias,3,Rate,2012,733.31079039531,833.8647167446501,628.3005276421601
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,544,Parkinson's disease,1,Number,2012,4066568.1318706656,4656097.125233605,3564809.903927289
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,544,Parkinson's disease,1,Number,2012,3552531.378219781,4109568.677592087,3084809.9494493296
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,544,Parkinson's disease,3,Rate,2012,113.44267185868001,129.88841725787998,99.44541614842
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,544,Parkinson's disease,3,Rate,2012,99.93102778644001,115.60022361197,86.77424516621
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,545,Idiopathic epilepsy,1,Number,2012,11490457.035068184,14059452.464718323,8918751.681932593
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,545,Idiopathic epilepsy,1,Number,2012,10259250.59750748,12638718.182875177,8001435.934130642
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,545,Idiopathic epilepsy,3,Rate,2012,320.54255693386,392.20831933637,248.80119738143
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,545,Idiopathic epilepsy,3,Rate,2012,288.58786802367,355.52116602299,225.07660919402002
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,543,Alzheimer's disease and other dementias,1,Number,2010,13820580.441674178,15820472.117163884,11658145.172572302
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,543,Alzheimer's disease and other dementias,1,Number,2010,24298778.48538472,27606037.63640897,20736209.352045465
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,543,Alzheimer's disease and other dementias,3,Rate,2010,395.07835437394,452.24772692042,333.26247253291
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,543,Alzheimer's disease and other dementias,3,Rate,2010,701.2583386156,796.70523768559,598.44323977632
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,544,Parkinson's disease,1,Number,2010,3786398.629180402,4352052.601956401,3303917.591881564
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,544,Parkinson's disease,1,Number,2010,3283952.5542518967,3804358.1391885686,2852738.3408913217
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,544,Parkinson's disease,3,Rate,2010,108.23887938233999,124.40879653253,94.44656327541999
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,544,Parkinson's disease,3,Rate,2010,94.7742749156,109.79308568086,82.32951095223
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,545,Idiopathic epilepsy,1,Number,2010,11257621.002920648,14070213.23247558,8820268.63307858
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,545,Idiopathic epilepsy,1,Number,2010,10058729.58615403,12609797.680874033,7858002.402827021
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,545,Idiopathic epilepsy,3,Rate,2010,321.81299466903,402.2144158877,252.13826809944
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,545,Idiopathic epilepsy,3,Rate,2010,290.29311092377003,363.91647330285997,226.78052368592
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,543,Alzheimer's disease and other dementias,1,Number,2022,21528410.98921859,24628205.947463617,18469360.7515174
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,543,Alzheimer's disease and other dementias,1,Number,2022,36873325.28834513,42197854.2882419,31708307.892984778
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,543,Alzheimer's disease and other dementias,3,Rate,2022,536.48233518932,613.72840962743,460.25160846242
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,543,Alzheimer's disease and other dementias,3,Rate,2022,926.0145643569599,1059.73159051852,796.3034169120401
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,544,Parkinson's disease,1,Number,2022,6021010.256252811,6978561.96285857,5231596.581296632
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,544,Parkinson's disease,1,Number,2022,5193711.876417779,6044411.563445995,4446067.761204792
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,544,Parkinson's disease,3,Rate,2022,150.04199074845002,173.90392723237,130.37000975632
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,544,Parkinson's disease,3,Rate,2022,130.43176342321,151.79572487561,111.65587775982
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,545,Idiopathic epilepsy,1,Number,2022,13076531.703625863,16538827.780379664,10117157.875903528
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,545,Idiopathic epilepsy,1,Number,2022,11882365.950043324,14898649.322213452,9349002.795830542
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,545,Idiopathic epilepsy,3,Rate,2022,325.86372807782004,412.14323497240997,252.11691125099
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,545,Idiopathic epilepsy,3,Rate,2022,298.40660810261,374.15573870082,234.78524606755
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,543,Alzheimer's disease and other dementias,1,Number,2013,15473917.408765702,17724369.864528444,13148280.566583438
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,543,Alzheimer's disease and other dementias,1,Number,2013,27016359.0390524,30736833.439173777,23204491.647896964
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,543,Alzheimer's disease and other dementias,3,Rate,2013,426.30810332083,488.30831262054,362.23655601878
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,543,Alzheimer's disease and other dementias,3,Rate,2013,750.31506927697,853.6423904469,644.44952531025
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,544,Parkinson's disease,1,Number,2013,4208501.0275675,4813286.196329395,3689342.271543903
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,544,Parkinson's disease,1,Number,2013,3695808.556475309,4258718.71963216,3208318.906143434
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,544,Parkinson's disease,3,Rate,2013,115.94465987454,132.60655688488,101.64177982443
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,544,Parkinson's disease,3,Rate,2013,102.6422860711,118.27577604121001,89.10342133245
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,545,Idiopathic epilepsy,1,Number,2013,11586764.03311089,14235701.155731212,8963999.32421646
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,545,Idiopathic epilepsy,1,Number,2013,10335991.779786834,12750138.44194123,7987509.828896515
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,545,Idiopathic epilepsy,3,Rate,2013,319.21660611833,392.19511122013,246.95915385403
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,545,Idiopathic epilepsy,3,Rate,2013,287.05757045524,354.10474796131,221.83407401255
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,554,Motor neuron disease,1,Number,2017,135453.75511641547,153245.38826936216,117295.4357542652
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,554,Motor neuron disease,1,Number,2017,118701.50345304856,136008.9448892799,102730.63670968516
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,554,Motor neuron disease,3,Rate,2017,3.55223496575,4.01881532249,3.0760383708200005
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,554,Motor neuron disease,3,Rate,2017,3.1387426341,3.59639146536,2.7164359329
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,557,Other neurological disorders,1,Number,2017,13657.51980145216,17968.310408603276,9916.260228660198
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,557,Other neurological disorders,1,Number,2017,10941.827677421765,14657.911098205355,7987.201989485472
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,557,Other neurological disorders,3,Rate,2017,0.35816444766,0.4712136659,0.2600510136
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,557,Other neurological disorders,3,Rate,2017,0.28932726231,0.38758911346999997,0.21120011695
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,543,Alzheimer's disease and other dementias,1,Number,2021,20593692.049745947,23609966.937356547,17626925.07374879
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,543,Alzheimer's disease and other dementias,1,Number,2021,35200090.74934263,40240647.11608273,30351987.27830242
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,543,Alzheimer's disease and other dementias,3,Rate,2021,517.75753321356,593.59138765456,443.16838487623
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,543,Alzheimer's disease and other dementias,3,Rate,2021,892.2064974756399,1019.9680186978999,769.3230240181999
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,544,Parkinson's disease,1,Number,2021,5797271.794240013,6708543.705795963,5047019.972409815
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,544,Parkinson's disease,1,Number,2021,5013731.891092501,5846680.955625405,4299722.089247512
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,544,Parkinson's disease,3,Rate,2021,145.75245353303,168.66325048359002,126.88995274291
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,544,Parkinson's disease,3,Rate,2021,127.08160901309,148.19412752148,108.9838095215
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,545,Idiopathic epilepsy,1,Number,2021,12942371.888463505,15944516.68449664,10341261.079974571
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,545,Idiopathic epilepsy,1,Number,2021,11717250.464381948,14392955.839813098,9272420.591699082
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,545,Idiopathic epilepsy,3,Rate,2021,325.39141241485004,400.87001431826,259.99543035563
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,545,Idiopathic epilepsy,3,Rate,2021,296.99375127509,364.81407987282,235.02535712625001
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,972,Headache disorders,1,Number,2009,1099296342.9098158,1210216154.0618613,998888705.2989272
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,972,Headache disorders,1,Number,2009,1309803715.4174137,1413352788.377475,1201271859.224896
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,972,Headache disorders,3,Rate,2009,31837.47324436358,35049.89775809887,28929.4989782937
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,972,Headache disorders,3,Rate,2009,38320.02899968573,41349.49321024916,35144.78691743093
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,972,Headache disorders,1,Number,2020,1280052566.8724444,1401524941.9001648,1166818757.8147807
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,972,Headache disorders,1,Number,2020,1511037347.0376215,1623515376.1179588,1384494970.8889225
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,972,Headache disorders,3,Rate,2020,32475.49518688953,35557.30263186921,29602.70377486957
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,972,Headache disorders,3,Rate,2020,38663.038357145415,41541.02304838737,35425.18804693749
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,972,Headache disorders,1,Number,2010,1114451518.0101364,1226699482.8673687,1012916932.8444828
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,972,Headache disorders,1,Number,2010,1327951398.272187,1433183391.4737897,1217738407.305061
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,972,Headache disorders,3,Rate,2010,31857.972508689818,35066.71916189821,28955.481040362658
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,972,Headache disorders,3,Rate,2010,38324.43642690702,41361.412658702044,35143.70950329027
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,554,Motor neuron disease,1,Number,2018,138406.3193223762,156535.9580078964,119989.50054496327
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,554,Motor neuron disease,1,Number,2018,121125.06768007689,138819.84432747297,104940.3110106432
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,554,Motor neuron disease,3,Rate,2018,3.58776786466,4.057724261100001,3.1103671874199996
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,554,Motor neuron disease,3,Rate,2018,3.16630268538,3.6288577938300004,2.74322066375
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,557,Other neurological disorders,1,Number,2018,12192.115419573667,15719.17390988842,9098.726290574845
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,557,Other neurological disorders,1,Number,2018,9760.8234463701,12545.188633806536,7310.982298257815
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,557,Other neurological disorders,3,Rate,2018,0.3160439503,0.4074723415,0.23585713394
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,557,Other neurological disorders,3,Rate,2018,0.2551554528,0.32794090621,0.19111471577999997
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,543,Alzheimer's disease and other dementias,1,Number,2020,19797483.071057137,22713394.875229117,16928984.40492111
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,543,Alzheimer's disease and other dementias,1,Number,2020,33821552.89202356,38637816.01608748,29105483.14345422
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,543,Alzheimer's disease and other dementias,3,Rate,2020,502.27083076558,576.24879246223,429.49576118128005
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,543,Alzheimer's disease and other dementias,3,Rate,2020,865.3948887009001,988.6290140975,744.72441954182
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,544,Parkinson's disease,1,Number,2020,5599159.620819487,6453002.395331088,4880479.628156255
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,544,Parkinson's disease,1,Number,2020,4860709.846624579,5648453.614569138,4187927.272543325
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,544,Parkinson's disease,3,Rate,2020,142.05313595895998,163.71550173333,123.81990925666
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,544,Parkinson's disease,3,Rate,2020,124.37138738590998,144.52745273754,107.15684366949
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,545,Idiopathic epilepsy,1,Number,2020,12809706.69863224,15828007.297453947,10007819.002419526
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,545,Idiopathic epilepsy,1,Number,2020,11548045.645014064,14545016.471649392,9066067.357544798
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,545,Idiopathic epilepsy,3,Rate,2020,324.98787862540996,401.56348896079,253.90275857063
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,545,Idiopathic epilepsy,3,Rate,2020,295.48080502349,372.16454699229,231.97422001541
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,543,Alzheimer's disease and other dementias,1,Number,2014,16063929.48844643,18409584.56344878,13684630.255398806
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,543,Alzheimer's disease and other dementias,1,Number,2014,27958617.431357943,31807830.70969326,24062864.249340404
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,543,Alzheimer's disease and other dementias,3,Rate,2014,437.07795366179005,500.90007893418,372.34041602024
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,543,Alzheimer's disease and other dementias,3,Rate,2014,766.79937635391,872.36877185522,659.95356690951
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,544,Parkinson's disease,1,Number,2014,4358866.928264285,4973274.21612312,3818953.676856672
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,544,Parkinson's disease,1,Number,2014,3841938.490426577,4413336.93233908,3334715.061816302
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,544,Parkinson's disease,3,Rate,2014,118.59891682542,135.31611421386,103.90860215180001
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,544,Parkinson's disease,3,Rate,2014,105.36987551984,121.04117865146999,91.45865084339
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,545,Idiopathic epilepsy,1,Number,2014,11696360.594176544,14520931.739022056,8983721.665956795
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,545,Idiopathic epilepsy,1,Number,2014,10426892.90774908,12884062.866111536,7961492.924637717
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,545,Idiopathic epilepsy,3,Rate,2014,318.24226802476,395.09505655631,244.43500482541
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,545,Idiopathic epilepsy,3,Rate,2014,285.97032734543,353.36122735303996,218.35370881434
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,543,Alzheimer's disease and other dementias,1,Number,2015,16678679.408872357,19100168.340254556,14243327.664199963
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,543,Alzheimer's disease and other dementias,1,Number,2015,29000989.78986936,32993860.02669036,24966899.20043089
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,543,Alzheimer's disease and other dementias,3,Rate,2015,448.16945299199,513.23679694648,382.72960415885
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,543,Alzheimer's disease and other dementias,3,Rate,2015,785.5183526465499,893.66889762742,676.25131668664
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,544,Parkinson's disease,1,Number,2015,4519601.471721728,5150442.775867818,3956667.1158427848
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,544,Parkinson's disease,1,Number,2015,3991172.067396485,4576333.725772149,3466323.67154146
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,544,Parkinson's disease,3,Rate,2015,121.44530569042999,138.3965159915,106.31880939178001
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,544,Parkinson's disease,3,Rate,2015,108.10454850769,123.95418761483,93.88854931979
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,545,Idiopathic epilepsy,1,Number,2015,11842842.966359898,14731961.346154392,9000358.114229925
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,545,Idiopathic epilepsy,1,Number,2015,10561425.652078956,13123821.281784996,7964228.354581743
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,545,Idiopathic epilepsy,3,Rate,2015,318.22666075589,395.85958193386,241.84681975723998
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,545,Idiopathic epilepsy,3,Rate,2015,286.06588050722,355.4707114616,215.71841452726
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,543,Alzheimer's disease and other dementias,1,Number,2023,22220775.69215744,25475453.87299071,19071359.7922655
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,543,Alzheimer's disease and other dementias,1,Number,2023,37933344.83048778,43474004.200409845,32566276.695661336
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,543,Alzheimer's disease and other dementias,3,Rate,2023,548.88341976071,629.27840303516,471.08855817126
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,543,Alzheimer's disease and other dementias,3,Rate,2023,944.2103810754201,1082.12461243206,810.6170617547001
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,544,Parkinson's disease,1,Number,2023,6224697.145093853,7216607.849849459,5403931.437155711
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,544,Parkinson's disease,1,Number,2023,5450079.088962769,6358364.353617592,4674716.787748957
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,544,Parkinson's disease,3,Rate,2023,153.75849625176,178.26004143929,133.48446555018998
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,544,Parkinson's disease,3,Rate,2023,135.65957013484,158.26797389404,116.35979213814
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,545,Idiopathic epilepsy,1,Number,2023,13249466.029618446,16679636.175706852,10043326.844900846
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,545,Idiopathic epilepsy,1,Number,2023,12032332.433318404,15131040.81994415,9095758.226056157
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,545,Idiopathic epilepsy,3,Rate,2023,327.27985400199,412.00972780251,248.08385003181
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,545,Idiopathic epilepsy,3,Rate,2023,299.50043274218,376.63132219188003,226.40527428237002
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,543,Alzheimer's disease and other dementias,1,Number,2016,17250363.797202345,19761062.302529942,14740441.782722116
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,543,Alzheimer's disease and other dementias,1,Number,2016,29836059.79301301,33973810.69412965,25703274.596906856
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,543,Alzheimer's disease and other dementias,3,Rate,2016,457.87361738668,524.51468190661,391.25316313776995
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,543,Alzheimer's disease and other dementias,3,Rate,2016,798.44078994543,909.17086358802,687.8436032007301
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,544,Parkinson's disease,1,Number,2016,4700192.179919519,5365136.883614851,4109502.551937888
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,544,Parkinson's disease,1,Number,2016,4136097.5741484384,4752739.43940315,3584564.215055534
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,544,Parkinson's disease,3,Rate,2016,124.75644114713,142.40596091508,109.07786184896
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,544,Parkinson's disease,3,Rate,2016,110.68582907076,127.18774056387,95.92628193315
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,545,Idiopathic epilepsy,1,Number,2016,12023255.312409775,14919921.08019058,9217055.938774029
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,545,Idiopathic epilepsy,1,Number,2016,10734535.371327491,13315532.639933802,8180575.981343077
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,545,Idiopathic epilepsy,3,Rate,2016,319.13132194635,396.01705311389003,244.64682565280998
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,545,Idiopathic epilepsy,3,Rate,2016,287.26617928239,356.33607364142,218.91984377514
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,554,Motor neuron disease,1,Number,2016,132716.80561758063,150315.09097539546,114994.05655881338
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,554,Motor neuron disease,1,Number,2016,116466.51144518524,133447.01539119976,100651.73269135338
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,554,Motor neuron disease,3,Rate,2016,3.52268071506,3.9897891581800002,3.05226865204
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,554,Motor neuron disease,3,Rate,2016,3.11675248158,3.5711666059100002,2.69353425074
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,557,Other neurological disorders,1,Number,2016,14804.285008837303,20402.80532523105,10241.565970565178
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,557,Other neurological disorders,1,Number,2016,11866.452398290352,16478.24845103,8166.317100316533
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,557,Other neurological disorders,3,Rate,2016,0.39294774356999995,0.54154836321,0.27184022979
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,557,Other neurological disorders,3,Rate,2016,0.31755733473000003,0.4409732988,0.21853826282000002
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,972,Headache disorders,1,Number,2019,1262899116.3092475,1384053838.526989,1150762235.3281808
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,972,Headache disorders,1,Number,2019,1492427273.9269102,1603539339.3736572,1366300773.181131
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,972,Headache disorders,3,Rate,2019,32372.36663444637,35477.97106197123,29497.91991302397
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,972,Headache disorders,3,Rate,2019,38584.43769372989,41457.07118224226,35323.62881240412
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,972,Headache disorders,1,Number,2012,1143211516.6541047,1257819195.357092,1039296170.2652175
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,972,Headache disorders,1,Number,2012,1362014953.5378032,1469500180.213302,1248480359.0515647
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,972,Headache disorders,3,Rate,2012,31891.502796291472,35088.64615304327,28992.63717810905
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,972,Headache disorders,3,Rate,2012,38312.83658801838,41336.345187940824,35119.16213213991
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,972,Headache disorders,1,Number,2023,1323713941.9011574,1450387077.7817066,1206815495.14538
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,972,Headache disorders,1,Number,2023,1560231183.037069,1674863501.3136024,1430746924.489727
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,972,Headache disorders,3,Rate,2023,32697.53699336755,35826.5359525924,29809.98616665756
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,972,Headache disorders,3,Rate,2023,38836.18717211443,41689.53494324094,35613.15525514016
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,972,Headache disorders,1,Number,2014,1173454293.7675972,1289435547.925599,1067486516.167381
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,972,Headache disorders,1,Number,2014,1396122757.9985163,1503077879.7627947,1278136344.8336434
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,972,Headache disorders,3,Rate,2014,31928.11583270903,35083.81003984357,29044.87487843926
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,972,Headache disorders,3,Rate,2014,38290.37908527155,41223.75448797373,35054.45698521846
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,543,Alzheimer's disease and other dementias,1,Number,2017,17885155.905929375,20490370.450826596,15288535.616645074
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,543,Alzheimer's disease and other dementias,1,Number,2017,30874260.85393323,35175172.68674455,26618476.462112557
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,543,Alzheimer's disease and other dementias,3,Rate,2017,469.03296348129004,537.35395016571,400.93735862749
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,543,Alzheimer's disease and other dementias,3,Rate,2017,816.38695399503,930.1130226838201,703.85415934983
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,544,Parkinson's disease,1,Number,2017,4919897.157145278,5626436.138895816,4296879.935170393
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,544,Parkinson's disease,1,Number,2017,4318155.242688939,4982039.076343691,3732465.634465711
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,544,Parkinson's disease,3,Rate,2017,129.02285872017,147.55163611348001,112.68441495934
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,544,Parkinson's disease,3,Rate,2017,114.18202437735,131.73665032704,98.69503482621
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,545,Idiopathic epilepsy,1,Number,2017,12222753.09887642,15032267.326532038,9426136.72707862
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,545,Idiopathic epilepsy,1,Number,2017,10937827.313938065,13488371.44874253,8395000.434537325
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,545,Idiopathic epilepsy,3,Rate,2017,320.53811205333,394.21679794631996,247.19766864407
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,545,Idiopathic epilepsy,3,Rate,2017,289.22148343551,356.66377677798,221.98325219714
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,972,Headache disorders,1,Number,2021,1294502139.6726916,1417474155.7730808,1179913880.1172142
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,972,Headache disorders,1,Number,2021,1527503267.2671647,1641080988.8520613,1399810373.214562
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,972,Headache disorders,3,Rate,2021,32545.80251844075,35637.510773407186,29664.874977164258
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,972,Headache disorders,3,Rate,2021,38717.182568527605,41596.00415703207,35480.58779476757
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,543,Alzheimer's disease and other dementias,1,Number,2018,18495853.63333453,21196172.04217963,15812025.897614315
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,543,Alzheimer's disease and other dementias,1,Number,2018,31822902.080559514,36282332.47733291,27432339.86625836
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,543,Alzheimer's disease and other dementias,3,Rate,2018,479.44941834989,549.44705761251,409.87925022728
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,543,Alzheimer's disease and other dementias,3,Rate,2018,831.8752034097499,948.44815326255,717.10252096052
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,544,Parkinson's disease,1,Number,2018,5149895.030800856,5902681.212886875,4494877.1460664
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,544,Parkinson's disease,1,Number,2018,4501117.034346859,5215249.954227631,3883218.1211367967
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,544,Parkinson's disease,3,Rate,2018,133.49555127482,153.00927063582,116.51618119164
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,544,Parkinson's disease,3,Rate,2018,117.66267070927,136.33065600123,101.51031657098001
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,545,Idiopathic epilepsy,1,Number,2018,12426728.724993678,15149224.5246817,9642274.494788997
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,545,Idiopathic epilepsy,1,Number,2018,11148749.810537754,13697314.8628737,8586352.237287208
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,545,Idiopathic epilepsy,3,Rate,2018,322.12559513621,392.69811660491,249.94698756508
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,545,Idiopathic epilepsy,3,Rate,2018,291.43691838436,358.05837440204,224.45386960180997
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,972,Headache disorders,1,Number,2013,1158157078.074184,1273419692.6664476,1053165217.7789629
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,972,Headache disorders,1,Number,2013,1379030590.3052168,1486230467.889884,1263032916.5753262
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,972,Headache disorders,3,Rate,2013,31907.353145217,35082.8506816581,29014.816003896398
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,972,Headache disorders,3,Rate,2013,38299.29234373309,41276.5137916771,35077.7330479449
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,972,Headache disorders,1,Number,2022,1309023693.866461,1433716722.3802464,1193197611.753608
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,972,Headache disorders,1,Number,2022,1544107845.6834245,1658698527.2955325,1415080127.0304215
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,972,Headache disorders,3,Rate,2022,32620.525892753,35727.843341885964,29734.17041399274
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,972,Headache disorders,3,Rate,2022,38777.7978486972,41655.559463160105,35537.47314936236
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,972,Headache disorders,1,Number,2011,1128789472.2103295,1242196085.9308035,1025950551.7649182
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,972,Headache disorders,1,Number,2011,1345108579.2150817,1451857023.735758,1233320589.7718625
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,972,Headache disorders,3,Rate,2011,31875.853803880338,35078.339943539686,28971.78845407879
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,972,Headache disorders,3,Rate,2011,38323.004365092325,41364.33587434481,35138.092995411454
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,972,Headache disorders,1,Number,2016,1205942337.2408645,1323736030.9732063,1098230492.0663276
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,972,Headache disorders,1,Number,2016,1431773333.5793111,1540040711.7708056,1310412066.189317
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,972,Headache disorders,3,Rate,2016,32009.13249155801,35135.71146047885,29150.154398965078
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,972,Headache disorders,3,Rate,2016,38315.58990753813,41212.92593542687,35067.849191240966
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,972,Headache disorders,1,Number,2018,1243809088.8590012,1364603585.1505742,1133067708.411026
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,972,Headache disorders,1,Number,2018,1472208193.9585695,1581838407.521281,1346719327.7452312
+1,All Population,5,Prevalence,1,Global,1,Male,22,All ages,972,Headache disorders,3,Rate,2018,32242.0125079813,35373.246790809135,29371.37503995141
+1,All Population,5,Prevalence,1,Global,2,Female,22,All ages,972,Headache disorders,3,Rate,2018,38484.65761263669,41350.475946127044,35204.2818680671
