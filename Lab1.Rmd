@@ -1,0 +1,136 @@
+---
+title: "DAT301 Lab 1"
+name: "Madison(Dayeon) Kim"
+output: pdf_document
+date: "2026-08-19"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Read the file
+
+```{r}
+df = read.csv("Absenteeism_at_work.csv",sep=";",header=TRUE)
+```
+
+\vspace{0.5cm}
+
+# 1. Plot the scatter plot of height vs. weight.
+
+```{r}
+x = df$Weight
+y = df$Height
+
+plot(x,y,pch=16, xlab= 'Weight (lbs)',
+                 ylab = 'Height (cm)',
+                 main = 'Height vs Weight')
+```
+
+There is no significant linear relationship between weight and height in absenteeism, thus showing that there's no correlation in height and weight.
+
+\vspace{1cm}
+
+# 2. Plot the histogram of hours of absences.
+
+```{r}
+hist(df$Absenteeism.time.in.hours, breaks=12, col='lightgreen',
+     xlab='Hours of Absences',
+     ylab='Frequency',
+     main="Histogram of Absenteeism Hours")
+
+```
+
+Hours of absences are right-skewed, meaning majority of absences are occurring at lower hours of absences.
+
+\vspace{1cm}
+
+# 3. Plot the histogram of age of a person corresponding to each absence.
+
+```{r}
+hist(df$Age, breaks=12, col='lightblue',
+     xlab='Age',
+     ylab='Frequences',
+     main = 'Histogram of Ages')
+```
+
+The histogram does not show a clear pattern, but it is slightly right-skewed, because there are fewer observations at higher ages.
+
+\vspace{1cm}
+
+# 4. Plot the bar plot of hours by month.
+
+```{r}
+table(df$Month.of.absence)
+```
+
+```{r}
+monthly_hours = tapply(df$Absenteeism.time.in.hours, df$Month.of.absence, sum, na.rm=T)
+
+barplot(monthly_hours,
+        col='brown',
+        main = "Total Absence Hours by Month",
+        xlab = "Month",
+        ylab = "Total Absence Hours")
+```
+
+Three absences were recorded without a specified month. The highest number of absenteeism hours was recorded in March, followed by July, while the lowest was recorded in January.
+
+\vspace{1cm}
+
+# 5. Plot the box plots of hours by social smoker variable.
+
+```{r}
+table(df$Social.smoker)
+unique(df$Absenteeism.time.in.hours)
+```
+
+```{r}
+
+boxplot(df$Absenteeism.time.in.hours ~ df$Social.smoker,
+        data = df, 
+        xlab= "Absenteeism Hours by Social Smoker Status",
+        ylab= "Absent Hours",
+        names = c("Non-Smoker","Smoker"),
+        col = c("lightblue","pink"),
+        main = "Box Plot of Hours by Smoking Status")
+
+legend(
+  "topright", 
+  legend = c("Non-Smoker", "Smoker"), 
+  fill = c("lightblue", "pink")
+)
+
+```
+
+More outliers are recorded in the Non-Smoker group, reaching up to more than 110 hours.
+
+\vspace{1cm}
+
+# 6. Plot the box plots of hours by social drinker variable.
+
+```{r}
+
+boxplot(df$Absenteeism.time.in.hours ~ df$Social.smoker,
+        data = df, 
+        horizontal=T,
+        xlab= "Absenteeism Hours by Social Smoker Status",
+        ylab= "Absent Hours",
+        ylim=c(0,10),
+        names = c("Non-Smoker","Smoker"),
+        col = c("turquoise","orange"),
+        main = "Box Plot of Hours by Smoking Status")
+
+abline(v=median(df$Absenteeism.time.in.hours, na.rm=T), col='red',lty='dashed', lwd=2)
+
+legend(
+  "topright",
+  legend = c("Non-Smoker","Smoker"),
+  fill = c("turquoise","orange"))
+
+```
+
+While the Non-Smoker group has a slightly lower median absenteeism hours than the Smoker group, both groups appear to have identical 25th and 75th percentiles.
+
+The Non-Smoker median falls right at the entire median and Smoker median is slightly away from the entire median.
