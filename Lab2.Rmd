@@ -1,0 +1,482 @@
+---
+title: "DAT 301 Lab 2"
+name : "Madison Kim 1237960505"
+output: html_document
+date: "2026-08-19"
+---
+
+```         
+```
+
+```{r}
+library(dplyr)
+```
+
+# Load the Data
+
+```{r}
+library(ggplot2movies)
+data(movies)
+
+df = movies
+head(df)
+
+```
+
+## 1. What is the range of years of production of the movies of this data set (i.e. what is the year of production of the oldest movie and of the most recent movie in this data set)?
+
+```{r}
+df %>%
+  summarise(
+    min_year = min(year, na.rm = TRUE),
+    max_year = max(year, na.rm = TRUE)
+  )
+```
+
+## 2. What proportion of movies have their budget included in this data base, and what proportion doesn’t? What are top 5 most expensive movies in this data set?
+
+```{r}
+
+df %>%
+  summarise(
+    incl = mean(!is.na(budget)),
+    not_incl = mean(is.na(budget))
+  )
+
+```
+
+8.87% have their budget included, and 91.13% do not.
+
+```{r}
+
+top5 = df[order(df$budget, decreasing=T), c("title" , "budget")][1:5,]
+top5
+```
+
+```{r}
+top5 = df %>%
+  arrange(desc(budget)) %>%
+  select(title, budget) %>%
+  slice_head(n=5)
+
+top5
+```
+
+## 3. What are top 5 longest movies?
+
+```{r}
+
+top5running = df %>%
+  arrange(desc(length)) %>%
+  select(title, length) %>%
+  slice_head(n=5)
+top5running
+
+```
+
+```{r}
+top5running = df[order(df$length, decreasing=T), c("title" , "length")][1:5,]
+top5running
+
+```
+
+## 4. Of all short movies, which one is the shortest (in minutes)? Which one is the longest? How long are the shortest and the longest short movies?
+
+```{r}
+
+shortest = df %>%
+  filter(Short == 1) %>%
+  arrange(length) %>%
+  slice_head(n = 1) %>%
+  select(title, length)
+
+longest = df %>%
+  filter(Short == 1) %>%
+  arrange(desc(length)) %>%
+  slice_head(n = 1) %>%
+  select(title, length)
+
+shortest
+longest
+```
+
+```{r}
+
+shortM = df[df$Short == 1,]
+
+shortest = shortM[which.min(shortM$length), c("title","length")]
+longest = shortM[which.max(shortM$length), c("title","length")]
+
+shortest
+longest
+```
+
+## 5. How many movies of each genre (action, animation, comedy, drama, documentary, romance, short) are there in this data base? (use a bar plot)
+
+```{r}
+genres = c('Action', 'Animation', 'Comedy', 'Drama', 'Documentary', 'Romance', 'Short')
+
+genre_counts = sapply(df[genres], sum, na.rm = TRUE)
+#genre_counts = sapply(genres, function(x) {sum(df[[x]], na.rm=T)})
+genre_counts
+
+gplot = barplot(
+        sum_gen,
+        names.arg = genres,
+        main = "Movies per Genre",
+        ylab= "Number of Movies",
+        ylim= c(0, max(genre_count) + 4000),
+        col= "lightblue",
+        las = 2)
+
+text(gplot, genre_counts, label=x, pos = 3, cex = 0.8, col='red')
+
+
+```
+
+```{r}
+
+gen = df[,genres]
+
+gen_count = data.frame(
+  genre = genres,
+  count = sapply(gen, sum, na.rm=T)
+)
+gen_count
+
+ggplot(gen_count, aes(x=genre, y=count)) +
+  geom_col(fill='skyblue') +
+  geom_text(aes(label=count),
+            vjust=-0.5) +
+  labs(
+    title = 'Movies per Genre',
+    x = 'Genres',
+    y = 'Number of Movies') +
+  
+  ylim(0,max(gen_count$count)+500)
+
+
+
+```
+
+```{r}
+
+gen = df[,genres]
+gen_count = data.frame(
+  genre = genres,
+  count = sapply(gen, sum, na.rm=T)
+)
+
+plot_ly(
+  gen_count,
+  x = ~genre,
+  y = ~count,
+  type = "bar",
+  text = ~count,
+  textposition = "outside"
+) %>%
+  layout(
+    title = "Movies per Genre",
+    xaxis = list(title = "Genre"),
+    yaxis = list(
+      title = "Number of Movies",
+      range = c(0, max(sum_gen) + 4000)
+    )
+  )
+```
+
+## 6. What is the average rating of all movies within each genre? (use a bar plot)
+
+```{r}
+genre_avg = sapply(genres, function(x) {
+  mean(df$rating[df[[x]]==1], na.rm=T)
+})
+
+xx = barplot(genre_avg,
+        names.arg=genres,
+        main = "Average Rating by Genre",
+        ylab = "Average Rating",
+        ylim = c(0,max(genre_avg) + 1),
+        col = "pink",
+        las =2)
+
+text(xx, y=genre_avg+0.5, label=round(genre_avg,2) , cex=1, col='red')
+
+```
+
+```{r}
+
+avg_gen = sapply(genres, function(x) {
+  mean(df$rating[df[[x]] == 1], na.rm = TRUE)
+})
+
+gendf = data.frame(
+  genre = genres,
+  avg_rating = round(avg_gen,2)
+)
+gendf
+
+ggplot(gendf, aes(x = genre, y = avg_rating)) +
+  geom_col(fill = "pink") +
+  geom_text(aes(label = avg_rating),
+            vjust = -0.5) +
+  labs(
+    title = "Average Rating by Genre",
+    x = "Genre",
+    y = "Average Rating"
+  ) +
+  
+  ylim(0, max(avg_gen) + 1)
+```
+
+```{r}
+genre_names <- c("Action", "Animation", "Comedy",
+                 "Drama", "Documentary", "Romance", "Short")
+
+avg_gen <- sapply(genre_names, function(x) {
+  mean(df$rating[df[[x]] == 1], na.rm = TRUE)
+})
+
+genavg <- data.frame(
+  genre = genre_names,
+  avg_rating = avg_gen
+)
+
+plot_ly(
+  genavg,
+  x = ~genre,
+  y = ~avg_rating,
+  type = "bar",
+  text = ~round(avg_rating, 1),
+  textposition = "outside"
+) %>%
+  layout(
+    title = "Average Rating by Genre",
+    xaxis = list(title = "Genre"),
+    yaxis = list(
+      title = "Average Rating",
+      range = c(0, max(avg_gen) + 1)
+    )
+  )
+```
+
+## 7. What is the average rating of all movies within each genre that were produced in the years 2000-2005? (use a bar plot)
+
+```{r}
+yr_5 = df[df$year >= 2000 & df$year <= 2005,]
+avg_5 = sapply(genres, function(x) {
+  mean(yr_5$rating[yr_5[[x]] == 1], na.rm = TRUE)
+})
+avg_5
+
+rbar = barplot(sort(avg_5, decreasing = F),
+        col = 'olivedrab', las = 2,
+        ylab = "Average rating",
+        ylim = c(0,max(avg_5) + 1),
+        main = "Average rating by genre: 2000 to 2005"
+        )
+
+text(rbar, 7.5, label=round(avg_5,2), cex=1)
+
+```
+
+```{r}
+yr_5 = df[df$year >= 2000 & df$year <= 2005,]
+avg_5 = sapply(genres, function(x) {
+  mean(yr_5$rating[yr_5[[x]] == 1], na.rm = TRUE)
+})
+avg_5
+
+avg_df = data.frame(
+  genre = genres,
+  average_rating = round(avg_5,2)
+)
+avg_df 
+
+ggplot(avg_df, aes(x = genre, y = average_rating)) +
+  geom_col(fill = 'olivedrab') +
+  geom_text(aes(label = average_rating),
+            vjust = -0.5) +
+  labs(
+    title = "Average Rating by Genre: 2000-2005",
+    x = "Genre",
+    y = "Average Rating") +
+  
+  ylim(0, max(avg5) + 1)
+
+```
+
+```{r}
+
+yr_5 = df[df$year >= 2000 & df$year <= 2005,]
+avg_5 = sapply(genres, function(x) {
+  mean(yr_5$rating[yr_5[[x]]==1], na.rm=T)
+})
+
+
+avg_df = data.frame(
+  genre = genres,
+  average_rating = avg_5
+)
+
+avg_df
+
+plot_ly(
+  avg_df,
+  x = ~genre,
+  y = ~average_rating,
+  type = "bar",
+  text = ~round(average_rating, 2),
+  textposition = "outside"
+) %>%
+  layout(
+    title = "Average Rating by Genre: 2000-2005",
+    xaxis = list(title = "Genre"),
+    yaxis = list(
+      title = "Average Rating",
+      range = c(0, max(avg5) + 1)
+    )
+  )
+```
+
+## 8. For each of the first 6 genres (not including short movies) consider only movies from 1990 until the last year recorded and plot a function of the number of movies in this data base of corresponding genre produced by year, for years from 1990 until the last year recorded. For each of the 6 genres you should have one curve, and plot all the curves in the same figure. Naturally, use different colors, and appropriate legend.
+
+```{r}
+ngenres = c("Action", "Animation", "Comedy", "Drama", "Documentary", "Romance")
+
+sub = movies[movies$year >= 1990, ]
+years = sort(unique(sub$year))
+
+counts = sapply(ngenres, function(x) {
+  tab = tapply(sub[[x]], sub$year, sum)  
+  tab[as.character(years)]
+})
+counts[is.na(counts)] = 0
+
+matplot(years, counts, type = "l", lty = 1, lwd = 2, col = 1:6,
+        xlab = "Year", ylab = "Number of movies",
+        main = "Movies by genre: 1990 to last recorded year")
+legend("topleft", legend = ngenres, col = 1:6, lty = 1, lwd = 2, bty = "n")
+```
+
+```{r}
+
+sub = movies[movies$year >= 1990, ]
+years = sort(unique(sub$year))
+
+counts = sapply(ngenres, function(x) {
+  tab = tapply(sub[[x]], sub$year, sum)
+})
+
+counts[is.na(counts)] = 0
+
+plot_df = data.frame(
+  year = years,
+  counts
+)
+
+plot_long = reshape(
+  plot_df,
+  varying = ngenres,
+  v.names = "count",
+  timevar = "genre",
+  times = ngenres,
+  direction = "long"
+)
+
+ggplot(plot_long, aes(x = year, y = count, color = genre)) +
+  geom_line(linewidth = 1) +
+  labs(
+    title = "Movies by Genre: 1990 to Last Recorded Year",
+    x = "Year",
+    y = "Number of Movies",
+    color = "Genre"
+  )
+```
+
+```{r}
+plot_ly(
+  plot_long,
+  x = ~year,
+  y = ~count,
+  color = ~genre,
+  type = "scatter",
+  mode = "lines"
+) %>%
+  layout(
+    title = "Movies by Genre: 1990 to Last Recorded Year",
+    xaxis = list(title = "Year"),
+    yaxis = list(title = "Number of Movies")
+  )
+```
+
+## 9. Finally, formulate 3 questions of your choice related to this dataset and answer them. At least one of the answers should include some plot. Use any kind of plot system (base, plotly, or ggplot2). Impress me and the grader with your answers!
+
+### 9-1 : Using base plot, figure out distribution of movies by genre and rating
+
+```{r}
+
+rating_group = cut(df$rating,
+                   breaks = c(0, 5, 6, 7, 8, 9, 10),
+                   labels = c("0-5", "5-6",
+                              "6-7", "7-8", "8-9", "9-10"),
+                   include.lowest = TRUE)
+
+rating_counts = sapply(18:24, function(x) {
+  table(rating_group[df[, x] == 1])
+})
+
+xx = barplot(rating_counts,
+        names.arg = genres,
+        main = "Movie Counts by Genre and Rating",
+        ylab = "Number of Movies",
+        col = rainbow(6),
+        las=2,
+        beside=T)
+
+legend("topleft",
+       legend = levels(rating_group),
+       fill = rainbow(6),
+       title = "Rating")
+```
+
+### 9-2 : Using ggplot,
+
+```{r}
+library(ggplot2)
+
+df$rating_group = cut(df$rating,
+                      breaks = c(0, 5, 6, 7, 8, 9, 10),
+                      labels = c("0-5", "5-6", "6-7",
+                                 "7-8", "8-9", "9-10"),
+                      include.lowest = TRUE)
+
+ggplot(df, aes(x = rating_group, y = length)) +
+  geom_boxplot() +
+  labs(
+    title = "Movie Length by Rating Group",
+    x = "Rating",
+    y = "Movie Length (minutes)"
+  ) +
+  theme_minimal()
+```
+
+```{r}
+library(plotly)
+
+p = plot_ly(df,
+            x = ~rating,
+            y = ~votes,
+            type = "scatter",
+            mode = "markers",
+            text = ~title,
+            hoverinfo = "text+x+y") %>%
+  layout(
+    title = "Movie Rating vs. Number of Votes",
+    xaxis = list(title = "Movie Rating"),
+    yaxis = list(title = "Number of Votes", type = "log")
+  )
+
+p
+
+```
