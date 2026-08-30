@@ -1,0 +1,315 @@
+---
+title: 'Project1: Prevalence and Precision in Neurological Disease Across Countries'
+author: "Madison Kim"
+date: "2026-08-24"
+output:
+  html_document: default
+  pdf_document: default
+  word_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
+```
+
+## Project Description
+
+Neurological diseases are a major cause of disability and mortality worldwide, affecting millions of people across global populations. Because the occurrence and prevalence of these diseases are influenced by multiple demographic, geographic, and clinical factors, understanding and predicting their prevalence is important for identifying disease patterns and changes over time within different sociological contexts. This project analyzes and predicts the prevalence of major neurological diseases from 1990 to 2023 based on geographic location and sex, following with future disease population. Then, how have neurological disease prevalence rates changed across countries from 1990 to 2023, and can these trends be used to predict future disease burden?
+
+## Importing the Data
+
+```{r}
+df = read.csv("DAT301PROJECT1.csv")
+sum(is.na(df))
+```
+
+## Import Libraries
+
+```{r}
+library(tidyverse)  
+library(ggplot2)
+library(data.table)
+library(dplyr)
+library(tidyr)
+library(patchwork)
+library(plotly)
+```
+
+## Summary of Data
+
+```{r}
+head(df)
+range(df$year)
+lapply(df[, -c(15,16,17,18)], unique)
+
+```
+
+Selecting the columns that will be used for further analysis
+
+```{r}
+df = df %>%
+  select(location_name, cause_name, metric_name, year, val, sex_id, lower, upper)
+
+head(df)
+```
+
+# Data Exploration
+
+### Trend of Total Rate of Diseases
+
+To figure out the changes across six countries over time, I will use the sum of the rates as an approximate measure for the total disease burden of the six neurological diseases.
+
+```{r}
+ttrate <- df %>%
+  filter(metric_name == "Rate") %>%
+  group_by(location_name, year) %>%
+  summarise(
+    total_rate = sum(val),
+    .groups = "drop"
+  ) %>%
+  arrange(location_name, year)
+
+head(ttrate)
+```
+
+```{r}
+ttrate_change <- ttrate %>%
+  group_by(location_name) %>%
+  summarise(
+    rate_1990 = first(total_rate),
+    rate_2023 = last(total_rate),
+    pct_change = (last(total_rate) / first(total_rate) - 1) * 100,
+    .groups = "drop"
+  ) %>%
+  arrange(desc(pct_change))
+
+ttrate_change
+```
+
+Figure out the percent change for diseases over the years in six countries.
+
+India had the largest percent change over the years-12%, while the other four remained in changes under 5%. Only the USA had negative percent change.
+
+### Trend of Total Number of Diseases
+
+Now we plot the trend of number of diseases for each countries
+
+```{r}
+ttnumber <- df %>%
+  filter(metric_name == "Number") %>%
+  group_by(location_name, year) %>%
+  summarise(
+    total_number = sum(val),
+    .groups = "drop"
+  ) %>%
+  arrange(location_name, year)
+
+head(ttnumber)
+```
+
+```{r}
+ttnumber_change <- ttnumber %>%
+  group_by(location_name) %>%
+  summarise(
+    num_1990 = first(total_number),
+    num_2023 = last(total_number),
+    pct_change = (last(total_number) / first(total_number) - 1) * 100,
+    .groups = "drop"
+  ) %>%
+  arrange(desc(pct_change))
+```
+
+To investigate the discrepancy between the number of cases and the prevalence rate, I am going to compare the trends of both measures across countries and over time
+
+```{r}
+plt1 <- ggplot(ttrate, aes(year, total_rate, color = location_name)) +
+  geom_line(linewidth = 1) +
+  labs(
+    title = "Total neurological prevalence rate by country, 1990-2023",
+    y = "Sum of rates per 100k",
+    x = "Year",
+    color = "Country"
+  ) +
+  theme_minimal()
+
+plt2 <- ggplot(ttnumber, aes(year, total_number, color = location_name)) +
+  geom_line(linewidth = 1) +
+  labs(
+    title = "Total neurological prevalence number by country, 1990-2023",
+    y = "Number of cases",
+    x = "Year",
+    color = "Country"
+  ) +
+  theme_minimal()
+
+plt1 / plt2 +
+  plot_layout(guides = "collect")
+```
+
+# Disease Trend in Number and Rate
+
+```{r}
+p_num = df %>%
+  filter(metric_name == "Number") %>%
+  ggplot(aes(year, val, color = location_name)) +
+  geom_line(linewidth = 0.8) +
+  facet_wrap(~ cause_name, scales = "free_y") +
+  labs(title = "Number of cases", y = "Cases", color = "Country") +
+  theme_minimal() + theme(axis.title.x = element_blank())
+
+p_rate = df %>%
+  filter(metric_name == "Rate") %>%
+  ggplot(aes(year, val, color = location_name)) +
+  geom_line(linewidth = 0.8) +
+  facet_wrap(~ cause_name, scales = "free_y") +
+  labs(title = "Rate per 100k", y = "Per 100k", color = "Country") +
+  theme_minimal()
+
+p_num / p_rate + plot_layout(guides = "collect")
+
+```
+
+### Summay of data exploration
+
+The trend in the number of cases does not necessarily follow the trend in disease prevalence rates because raw case counts are influenced by both population size and disease prevalence. Since this project aims to compare disease prevalence across populations, I will use the prevalence rate per 100,000 people as the target for the predictive model. This measure accounts for differences in population size and allows the model to capture changes in disease prevalence rather than changes in population size.
+
+Because Alzheimer’s disease prevalence rates and case counts have increased across all five countries with relatively clear upward trends, there may be underlying demographic or population-level factors contributing to this pattern. The relatively consistent upward trend also makes Alzheimer’s disease a strong candidate for trend-based modeling, as the model can capture a clearer temporal signal with less fluctuation compared with diseases that show more irregular patterns. Therefore, I choose Alzheimer’s disease as the predicting target.
+
+Alzheimer’s disease stands out as the most compelling target for prediction. The number of cases increased across all five countries, reaching nearly 5 million in the United States, while prevalence rates per 100,000 also increased substantially in countries such as Japan and Italy, approaching 2,000 per 100,000 people. The combination of increasing case counts and prevalence rates, particularly in aging populations, makes Alzheimer’s disease both an important public health burden and a strong candidate for trend-based forecasting.
+
+# Linear Model
+
+Because Alzheimer's Disease is a major growing burden driven by population aging, I will be training the model to predict the AD rate based on country.
+
+## Uncertainty of Data
+
+Before we proceed to linear modeling, we must check the uncertainty of raw numbers in dataset itself. In this dataset, each disease rate is reported as a mean value with a 95% uncertainty interval.
+
+The confidence interval provides a range of possible values for the estimated disease rate. Wider it is, greater uncertainty. Confidence interval for 95% confidence level , the interval is calculated as:
+
+$CI = Estimate \pm 1.96 \times SE$
+
+Because the outcome is each person gets disease or not, we use binomial distribution.
+
+Standard Error for binomial:
+
+$SE = \sqrt{\frac{p(1-p)}{N}} = \sqrt{\frac{\frac{\text{rate}}{N}\,(1-p)}{N}} = \sqrt{\frac{\text{rate}\,(1-p)}{N^2}}$
+
+The disease is rare, so $(1-p)\approx 1$
+
+Thus,
+
+$SE \approx \frac{\sqrt{\text{rate}}}{N}$ , Where $p = \frac{\text{rate}}{N}$.
+
+- **Sample Size Effect:** Standard error is inversely proportional to the square root of the sample size ($SE = \frac{\sigma}{\sqrt{n}}$). As $n$ grows, standard error shrinks, leading to narrower confidence intervals.
+
+- **Impact of Case Counts:** A lower case count does not automatically mean a smaller standard error. In fact, when studying rare diseases, small case counts often yield higher uncertainty (wider percentage-based confidence intervals) because small statistical fluctuations have a larger proportional impact.
+
+- **Model Reliability:** As noted, confidence intervals directly reflect the precision of an estimate. In the provided graphs, countries with wider uncertainty interval widths (like Japan or Italy in recent years) have higher variance in their estimates, whereas flat, low-width lines (like Nigeria) indicate narrower uncertainty bounds relative to the scale.
+
+To capture the size of the margin of error compared to the estimated value, I will plot relative uncertainty calculated by:
+
+$\text{Relative Uncertainty} = \frac{\text{Margin of Error}}{\text{Estimate}}$
+
+A higher percentage means the noise is larger relative to the estimate, making the true value much harder to capture.
+
+```{r}
+
+alz_rate = df %>%
+  filter(cause_name == "Alzheimer's disease and other dementias",
+         metric_name == "Rate")
+
+prate = ggplot(alz_rate, aes(year, val, color = location_name)) +
+  geom_line(linewidth = 1) +
+  labs(title = "Alzheimer's prevalence rate over time",
+       y = "Rate per 100k", x = "Year", color = "Country") +
+  theme_minimal()
+
+width <- alz_rate %>%
+  mutate(width = upper - lower) %>%
+  ggplot(aes(year, width, color = location_name)) +
+  geom_line(linewidth = 1) +
+  labs(title = "Width of 95% uncertainty interval over time",
+       y = "Width (per 100k)", x = "Year", color = "Country") +
+  theme_minimal()
+
+rel_unc <- alz_rate %>%
+  mutate(rel_width = (upper - lower) / val)
+
+relplot <- ggplot(rel_unc, aes(year, rel_width, color = location_name)) +
+  geom_line(linewidth = 1) +
+  geom_hline(yintercept = 0.30, linetype = "dashed", color = "grey") +
+  scale_y_continuous(labels = scales::percent_format(accuracy = 1)) +
+  labs(title = "Relative uncertainty over time",
+       y = "Relative width", x = "Year", color = "Country") +
+  theme_minimal()
+
+
+prate / width / relplot + plot_layout(guides = "collect")
+```
+
+The two charts share the same ranking of countries, which is expected. The width of a confidence interval scales with the size of the estimate it surrounds, so countries with higher prevalence rates naturally show wider uncertainty bands. This is consistent with the standard error of a rate, $SE \approx \sqrt{\frac{rate}{N}}$ where uncertainty grows with the square root of the rate and shrinks only with the square root of the population. The bottom chart is therefore close to a rescaled version of the top one, so “the charts move together” reflects how the intervals are constructed as much as any feature of the data.
+
+The uncertainty is fairly uniform across countries, where all five stay near 30% for the whole period. This means that we're 95% sure that the true value of rate falls in $\pm 15\%$ of estimated rate.
+
+**Japan & Italy:** Show a moderate increase in relative uncertainty, tracking their sharp rise in overall prevalence.
+
+**USA:** Displays high relative uncertainty (\~32%) relative to its flatter growth in prevalence.
+
+**India & Nigeria:** Maintain the lowest relative uncertainty (\~28–30%) alongside their significantly lower reported prevalence rates.
+
+Since we now know that higher prevalence rates come with larger absolute uncertainties, your errors will be larger at high values and smaller at low values, I will model the Log-Transformation regression.
+
+```{r}
+log_mod <- lm(log(val) ~ year * location_name, data = alz_rate)
+summary(log_mod)
+```
+
+It is worth noting that as the prevalence rate grew, the width of the 95% uncertainty interval grew together. Countries with higher Alzheimer’s rates, such as Japan and Italy, carry wider intervals, since a larger estimated value naturally comes with a larger uncertainty.
+
+Now we model Alzheimer's Disease with explanatory variable location_name
+
+```{r}
+alz_rate$fitted = exp(predict(log_mod))
+
+ggplot(alz_rate, aes(year, color = location_name)) +
+  geom_point(aes(y = val), alpha = 0.4, size = 1) +
+  geom_line(aes(y = fitted), linewidth = 1) +
+  labs(title = "Log-linear fit of Alzheimer's prevalence",
+       y = "Rate per 100k", x = "Year", color = "Country") +
+  theme_minimal()
+
+```
+
+The log-linear model fits most countries well, capturing Japan’s accelerating growth and the US’s slow, steady rise with tightly aligned points. The clear exception is Italy after 2015, where the observed points scatter away from the fitted trend — consistent with the rise in its relative uncertainty over the same period, and suggesting its recent estimates are less stable than the smooth model implies.
+
+```{r}
+res <- resid(log_mod)
+
+hist(res,
+     breaks = 20,
+     main = "Histogram of residuals",
+     xlab = "Residual",
+     col = "darkred", border = "white")
+```
+
+- **Centered on zero** — the mass sits right around 0, so the model isn’t systematically over- or under-predicting. No bias
+
+- **Symmetric, bell-ish shape** — it tapers off fairly evenly on both sides, with only small tails out to ±0.09. No strong skew.
+
+- **Small residuals** — everything lives within roughly ±0.09 on the **log scale**, which is tight. Since these are log units, ±0.09 ≈ a ±9% error in the rate. So the fit is good.
+
+```{r}
+future <- data.frame(
+  year = 2030,
+  location_name = unique(alz_rate$location_name)
+)
+
+pred <- predict(log_mod, newdata = future, interval = "confidence")
+
+future$rate_2030 = round(exp(pred[, "fit"]))
+future$lower     = round(exp(pred[, "lwr"]))
+future$upper     = round(exp(pred[, "upr"]))
+
+future
+```
