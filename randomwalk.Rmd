@@ -1,0 +1,413 @@
+---
+title: "Random Walk"
+author: "Dayeon Kim"
+date: "September 12, 2026"
+output: ioslides_presentation
+runtime: shiny
+---
+
+```{r setup, include=FALSE}
+library(shiny)
+library(plotly)
+library(leaflet)
+```
+
+## Random Walk Simulation
+
+```{r, echo=FALSE}
+sliderInput("n", "Number of steps:",
+            min = 10, max = 500, value = 100, step = 10)
+
+renderPlot({
+  set.seed(123)
+  n <- input$n
+  steps <- sample(c(-1, 1), n, replace = TRUE)
+  walk <- c(0, cumsum(steps))
+  plot(0:n, walk, type = "l",
+       xlab = "Step", ylab = "Position", main = "Random Walk")
+  abline(h = 0, lty = 2)
+})
+```
+
+## Random Walk → t vs Z
+
+```{r, echo=FALSE}
+sliderInput("n_mid", "Steps per walk (sample size n):",
+            min = 2, max = 50, value = 5, step = 1)
+
+renderPlot({
+  set.seed(1)
+  nsim <- 5000
+  n <- input$n_mid
+
+  steps <- matrix(rnorm(nsim * n), nrow = nsim, ncol = n)
+  xbar  <- rowMeans(steps)
+  s     <- apply(steps, 1, sd)
+  t_stat <- sqrt(n) * xbar / s          # → t_{n-1}
+
+  hist(t_stat, breaks = 60, freq = FALSE, xlim = c(-5, 5),
+       col = "grey85", border = "white",
+       xlab = "standardized mean", ylab = "density",
+       main = sprintf("Studentized mean from %d-step walks   (df = %d)", n, n - 1))
+
+  xx <- seq(-5, 5, by = 0.01)
+  lines(xx, dnorm(xx),          col = "red",  lwd = 2)   # Z
+  lines(xx, dt(xx, df = n - 1), col = "blue", lwd = 2)   # t_{n-1}
+
+  legend("topright", bty = "n",
+         legend = c("Z ~ N(0,1)", sprintf("t_d ,  d = %d", n - 1)),
+         col = c("red", "blue"), lwd = 2, text.col = c("red", "blue"))
+})
+```
+
+## Random Walks, the CLT, and why t ≠ Z
+
+```{r, echo=FALSE}
+# ---- setup + helper ----
+gen_steps <- function(nsim, n, type) {
+  if (type == "pm1") {
+    matrix(sample(c(-1, 1), nsim * n, replace = TRUE), nrow = nsim, ncol = n)
+  } else {
+    matrix(rnorm(nsim * n), nrow = nsim, ncol = n)
+  }
+}
+```
+
+```{r, echo=FALSE}
+# ---- UI ----
+ui <- fluidPage(
+  titlePanel("Random Walks, the CLT, and why t \u2260 Z"),
+  sidebarLayout(
+    sidebarPanel(
+      radioButtons("stepType", "Step type:",
+                   choices = c("Rademacher (\u00b11)" = "pm1",
+                               "Normal N(0,1)"        = "norm"),
+                   selected = "pm1"),
+      sliderInput("n", "Steps per walk (sample size n):",
+                  min = 2, max = 100, value = 10, step = 1),
+      sliderInput("npaths", "Number of walks:",
+                  min = 100, max = 5000, value = 2000, step = 100),
+      sliderInput("a", "Tail cutoff a (t vs Z tab):",
+                  min = 0, max = 5, value = 2, step = 0.1),
+      selectInput("conf", "Confidence level (coverage tab):",
+                  choices = c("90%" = "0.90", "95%" = "0.95", "99%" = "0.99"),
+                  selected = "0.95"),
+      checkboxInput("show_t", "Show P(t_d > a) area", value = TRUE),
+      checkboxInput("show_z", "Show P(Z > a) area",   value = TRUE),
+      submitButton("Update")
+    ),
+    mainPanel(
+      tabsetPanel(
+        tabPanel("Walk paths",             plotOutput("pathPlot", height = "460px")),
+        tabPanel("CLT: sums \u2192 Normal", plotOutput("cltPlot",  height = "460px")),
+        tabPanel("t vs Z",                 plotlyOutput("tzPlot", height = "460px")),
+        tabPanel("CI coverage",
+                 plotOutput("covPlot", height = "300px"),
+                 tableOutput("covTable"))
+      )
+    )
+  )
+)
+```
+
+```{r, echo=FALSE}
+# ---- server ----
+server <- function(input, output) {
+
+  walks <- reactive({ gen_steps(input$npaths, input$n, input$stepType) })
+
+  output$pathPlot <- renderPlot({
+    W <- walks(); n <- input$n
+    show <- min(nrow(W), 40)
+    paths <- t(apply(W[1:show, , drop = FALSE], 1, function(s) c(0, cumsum(s))))
+    matplot(0:n, t(paths), type = "l", lty = 1,
+            col = adjustcolor("grey40", 0.5),
+            xlab = "step", ylab = "position",
+            main = sprintf("%d random walks (%d steps each)", show, n))
+    abline(h = 0, lty = 2)
+    lines(0:n, colMeans(paths), col = "red", lwd = 2)
+    legend("topleft", bty = "n", legend = "mean path",
+           col = "red", lwd = 2, text.col = "red")
+  })
+
+  output$cltPlot <- renderPlot({
+    W <- walks(); n <- input$n
+    z <- rowSums(W) / sqrt(n)
+    hist(z, breaks = 50, freq = FALSE, col = "grey85", border = "white",
+         xlim = c(-4, 4), xlab = "S_n / \u221an", ylab = "density",
+         main = sprintf("Endpoints standardized  (n = %d)", n))
+    xx <- seq(-4, 4, by = 0.01)
+    lines(xx, dnorm(xx), col = "red", lwd = 2)
+    legend("topright", bty = "n", legend = "N(0,1)",
+           col = "red", lwd = 2, text.col = "red")
+  })
+
+  output$tzPlot <- renderPlotly({
+    W <- walks(); n <- input$n; a <- input$a; d <- n - 1
+    tstat <- sqrt(n) * rowMeans(W) / apply(W, 1, sd)
+    xmax <- max(4, a); xx <- seq(-xmax, xmax, by = 0.01)
+
+    p <- plot_ly() %>%
+      add_histogram(x = tstat, histnorm = "probability density",
+                    name = "simulation", opacity = 0.5,
+                    marker = list(color = "grey")) %>%
+      add_lines(x = xx, y = dnorm(xx), name = "Z ~ N(0,1)",
+                line = list(color = "red")) %>%
+      add_lines(x = xx, y = dt(xx, df = d), name = sprintf("t_d (d=%d)", d),
+                line = list(color = "blue"))
+
+    xtail <- seq(a, xmax, by = 0.01)
+    if (input$show_z)
+      p <- add_trace(p, x = xtail, y = dnorm(xtail), type = "scatter",
+                     mode = "lines", fill = "tozeroy",
+                     fillcolor = "rgba(255,0,0,0.3)", line = list(width = 0),
+                     name = sprintf("P(Z>a)=%.4f", pnorm(a, lower.tail = FALSE)))
+    if (input$show_t)
+      p <- add_trace(p, x = xtail, y = dt(xtail, df = d), type = "scatter",
+                     mode = "lines", fill = "tozeroy",
+                     fillcolor = "rgba(0,0,255,0.3)", line = list(width = 0),
+                     name = sprintf("P(t>a)=%.4f", pt(a, df = d, lower.tail = FALSE)))
+
+    layout(p, title = sprintf("t vs Z  (df = %d)", d),
+           xaxis = list(title = "studentized mean", range = c(-xmax, xmax)),
+           yaxis = list(title = "density"),
+           shapes = list(list(type = "line", x0 = a, x1 = a,
+                              y0 = 0, y1 = max(dt(0, df = d), dnorm(0)),
+                              line = list(dash = "dash", color = "black"))))
+  })
+
+  coverage <- reactive({
+    W <- walks(); n <- input$n
+    conf <- as.numeric(input$conf); alpha <- 1 - conf
+    xbar <- rowMeans(W); se <- apply(W, 1, sd) / sqrt(n)
+    tcrit <- qt(1 - alpha/2, df = n - 1); zcrit <- qnorm(1 - alpha/2)
+    data.frame(
+      Method   = c("t-interval", "z-interval"),
+      Critical = c(tcrit, zcrit),
+      Coverage = 100 * c(mean(abs(xbar) <= tcrit*se), mean(abs(xbar) <= zcrit*se)),
+      Width    = c(2*tcrit, 2*zcrit) * mean(se)
+    )
+  })
+
+  output$covPlot <- renderPlot({
+    cv <- coverage(); nominal <- as.numeric(input$conf) * 100
+    bp <- barplot(cv$Coverage, names.arg = cv$Method,
+                  col = c("steelblue", "tomato"), ylim = c(0, 100),
+                  ylab = "actual coverage (%)",
+                  main = sprintf("Coverage vs nominal %.0f%%   (n = %d)", nominal, input$n))
+    abline(h = nominal, lty = 2, lwd = 2)
+    text(bp, cv$Coverage + 3, sprintf("%.1f%%", cv$Coverage))
+  })
+
+  output$covTable <- renderTable({
+    cv <- coverage()
+    data.frame(Method = cv$Method,
+               `Critical value`  = round(cv$Critical, 3),
+               `Actual coverage` = sprintf("%.1f%%", cv$Coverage),
+               `Avg width`       = round(cv$Width, 3),
+               check.names = FALSE)
+  }, striped = TRUE)
+}
+```
+
+```{r, echo=FALSE}
+# ---- run ----
+shinyApp(ui = ui, server = server, options = list(height = 680))
+```
+
+## Random Walk on the ASU Campus Map
+
+```{r, echo=FALSE}
+# ---- setup ----
+
+sliderInput("nsteps", "Number of steps:",
+            min = 10, max = 1000, value = 200, step = 10)
+sliderInput("stepsize", "Step size (meters):",
+            min = 5, max = 100, value = 25, step = 5)
+radioButtons("movetype", "Step type:",
+             choices = c("4-direction (N/S/E/W)" = "grid",
+                         "Any angle"             = "angle"),
+             selected = "grid")
+actionButton("resim", "New walk")
+
+renderLeaflet({
+  input$resim                  
+  n    <- input$nsteps
+  step <- input$stepsize
+
+  m2lat <- 1 / 111320
+  m2lng <- 1 / (111320 * cos(asu_lat * pi / 180))
+
+  if (input$movetype == "grid") {
+    dir <- sample(1:4, n, replace = TRUE)    
+    dx  <- c(1, -1, 0, 0)[dir]                # E / W
+    dy  <- c(0, 0, 1, -1)[dir]                # N / S
+  } else {
+    ang <- runif(n, 0, 2 * pi)
+    dx  <- cos(ang); dy <- sin(ang)
+  }
+
+  lng <- asu_lng + c(0, cumsum(dx)) * step * m2lng
+  lat <- asu_lat + c(0, cumsum(dy)) * step * m2lat
+
+  leaflet() %>%
+    addTiles() %>%
+    setView(lng = asu_lng, lat = asu_lat, zoom = 15) %>%
+    addPolylines(lng = lng, lat = lat,
+                 color = "blue", weight = 2, opacity = 0.7) %>%
+    addCircleMarkers(lng = asu_lng, lat = asu_lat,
+                     color = "green", radius = 6,
+                     fillOpacity = 1, label = "Start (ASU)") %>%
+    addCircleMarkers(lng = lng[length(lng)], lat = lat[length(lat)],
+                     color = "red", radius = 6,
+                     fillOpacity = 1, label = "End")
+})
+```
+
+## Random Walk on Campus: Diffusion, First-Passage, Recurrence
+
+```{r, echo=FALSE}
+# ---- setup ----
+asu_lat <- 33.419028
+asu_lng <- -111.934583
+m2lat <- 1 / 111320
+m2lng <- 1 / (111320 * cos(asu_lat * pi / 180))
+
+dxu <- c(1, -1, 0, 0)      
+dyu <- c(0, 0, 1, -1)
+```
+
+```{r, echo=FALSE}
+# ---- UI ----
+ui <- fluidPage(
+  titlePanel("Random Walk on Campus: Diffusion, First-Passage, Recurrence"),
+  sidebarLayout(
+    sidebarPanel(
+      sliderInput("n", "Steps per walk (n):", 10, 1000, 300, 10),
+      sliderInput("nwalkers", "Number of walkers:", 50, 2000, 500, 50),
+      sliderInput("stepsize", "Step size (meters):", 5, 100, 25, 5),
+      actionButton("resim", "Re-simulate")
+    ),
+    mainPanel(
+      tabsetPanel(
+        tabPanel("Diffusion (\u221an)",
+                 leafletOutput("diffMap", height = "420px"),
+                 verbatimTextOutput("diffText")),
+        tabPanel("First-passage time",
+                 leafletOutput("fpMap", height = "300px"),
+                 plotOutput("fpHist", height = "220px")),
+        tabPanel("Recurrence (2D vs 3D)",
+                 plotOutput("recPlot", height = "440px"))
+      )
+    )
+  )
+)
+```
+
+```{r, echo=FALSE}
+# ---- server ----
+server <- function(input, output) {
+
+  ## Tab 1: 확산 = 2D CLT
+  output$diffMap <- renderLeaflet({
+    input$resim
+    nw <- input$nwalkers; n <- input$n; step <- input$stepsize
+    dir <- matrix(sample(1:4, nw * n, replace = TRUE), nrow = nw)
+    X <- rowSums(matrix(dxu[dir], nrow = nw)) * step  
+    Y <- rowSums(matrix(dyu[dir], nrow = nw)) * step
+    lng <- asu_lng + X * m2lng
+    lat <- asu_lat + Y * m2lat
+    rms <- sqrt(mean(X^2 + Y^2))
+
+    leaflet() %>% addTiles() %>%
+      setView(asu_lng, asu_lat, zoom = 15) %>%
+      addCircleMarkers(lng, lat, radius = 2, stroke = FALSE,
+                       fillColor = "blue", fillOpacity = 0.35) %>%
+      addCircles(asu_lng, asu_lat, radius = rms, color = "red",
+                 fill = FALSE, weight = 2) %>%          # 1×RMS
+      addCircles(asu_lng, asu_lat, radius = 2 * rms, color = "red",
+                 fill = FALSE, weight = 1, dashArray = "4") %>%  # 2×RMS
+      addCircleMarkers(asu_lng, asu_lat, radius = 5,
+                       color = "green", fillOpacity = 1)
+  })
+
+  output$diffText <- renderText({
+    input$resim
+    n <- input$n; step <- input$stepsize
+    sprintf("Theory: RMS distance = step \u00d7 \u221an = %.0f m.  Double n \u2192 spread \u00d71.41, not \u00d72.",
+            step * sqrt(n))
+  })
+
+  ## Tab 2: first-passage time
+  fp <- reactive({
+    input$resim
+    nw <- min(input$nwalkers, 400); n_cap <- 2000; step <- input$stepsize
+    dir <- matrix(sample(1:4, nw * n_cap, replace = TRUE), nrow = nw)
+    X <- t(apply(matrix(dxu[dir], nrow = nw), 1, cumsum)) * step
+    Y <- t(apply(matrix(dyu[dir], nrow = nw), 1, cumsum)) * step
+    tx <- 250; ty <- 150; rad <- 40                    # 목표: 중심에서 NE ~290m
+    hit <- (sqrt((X - tx)^2 + (Y - ty)^2) <= rad)
+    times <- apply(hit, 1, function(r) { w <- which(r); if (length(w)) w[1] else NA_integer_ })
+    list(times = times, X = X, Y = Y, tx = tx, ty = ty, rad = rad, n_cap = n_cap)
+  })
+
+  output$fpMap <- renderLeaflet({
+    f <- fp()
+    tlat <- asu_lat + f$ty * m2lat; tlng <- asu_lng + f$tx * m2lng
+    m <- leaflet() %>% addTiles() %>%
+      setView(asu_lng, asu_lat, zoom = 15) %>%
+      addCircleMarkers(asu_lng, asu_lat, radius = 5, color = "green",
+                       fillOpacity = 1, label = "Start") %>%
+      addCircles(tlng, tlat, radius = f$rad, color = "orange",
+                 weight = 2, label = "Target") %>%
+      addCircleMarkers(tlng, tlat, radius = 5, color = "orange",
+                       fillOpacity = 1)
+    w <- which(!is.na(f$times))[1]              
+    if (!is.na(w)) {
+      tt <- f$times[w]
+      plng <- asu_lng + c(0, f$X[w, 1:tt]) * m2lng
+      plat <- asu_lat + c(0, f$Y[w, 1:tt]) * m2lat
+      m <- addPolylines(m, lng = plng, lat = plat, color = "blue", weight = 2)
+    }
+    m
+  })
+
+  output$fpHist <- renderPlot({
+    f <- fp()
+    reached <- f$times[!is.na(f$times)]
+    pct <- 100 * length(reached) / length(f$times)
+    med <- if (length(reached)) median(reached) else NA
+    hist(reached, breaks = 30, col = "grey85", border = "white",
+         xlab = "steps to reach target", ylab = "frequency",
+         main = sprintf("First-passage time  (%.0f%% reached \u2264 %d steps, median = %s)",
+                        pct, f$n_cap, ifelse(is.na(med), "NA", as.character(med))))
+  })
+
+  output$recPlot <- renderPlot({
+    input$resim
+    n <- input$n; R <- 200
+    d2 <- matrix(sample(1:4, R * n, replace = TRUE), nrow = R)
+    X2 <- t(apply(matrix(c(1,-1,0,0)[d2], nrow = R), 1, cumsum))
+    Y2 <- t(apply(matrix(c(0,0,1,-1)[d2], nrow = R), 1, cumsum))
+    cum2 <- colMeans(t(apply((X2 == 0 & Y2 == 0), 1, cumsum)))
+
+    d3 <- matrix(sample(1:6, R * n, replace = TRUE), nrow = R)
+    X3 <- t(apply(matrix(c(1,-1,0,0,0,0)[d3], nrow = R), 1, cumsum))
+    Y3 <- t(apply(matrix(c(0,0,1,-1,0,0)[d3], nrow = R), 1, cumsum))
+    Z3 <- t(apply(matrix(c(0,0,0,0,1,-1)[d3], nrow = R), 1, cumsum))
+    cum3 <- colMeans(t(apply((X3 == 0 & Y3 == 0 & Z3 == 0), 1, cumsum)))
+
+    plot(1:n, cum2, type = "l", col = "blue", lwd = 2, ylim = c(0, max(cum2)),
+         xlab = "steps", ylab = "avg cumulative returns to origin",
+         main = "2D recurrent vs 3D transient (P\u00f3lya)")
+    lines(1:n, cum3, col = "red", lwd = 2)
+    legend("topleft", bty = "n", legend = c("2D walk", "3D walk"),
+           col = c("blue", "red"), lwd = 2, text.col = c("blue", "red"))
+  })
+}
+```
+
+```{r, echo=FALSE}
+# ---- run ----
+shinyApp(ui = ui, server = server, options = list(height = 720))
+```
