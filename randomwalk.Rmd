@@ -308,7 +308,6 @@ ui <- fluidPage(
 # ---- server ----
 server <- function(input, output) {
 
-  ## Tab 1: 확산 = 2D CLT
   output$diffMap <- renderLeaflet({
     input$resim
     nw <- input$nwalkers; n <- input$n; step <- input$stepsize
